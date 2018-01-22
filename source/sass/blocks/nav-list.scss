@@ -1,0 +1,21 @@
+.nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.nav-list__link {
+  display: block;
+
+  font-family: "PT Sans", "Helvetica", sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #ffffff;
+
+  text-align: center;
+  text-decoration: none;
+
+  background-color: #81b3d2;
+}
