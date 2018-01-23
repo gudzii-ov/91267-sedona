@@ -37,7 +37,7 @@
       <p class="page-content__intro">
         Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
       </p>
-      <section class="page-content__form">
+      <section class="page-content__item">
         <form class="feedback-form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="feedback-form__item">
             <legend class="feedback-form__legend">
@@ -45,15 +45,15 @@
             </legend>
             <label class="feedback-form__labeled-input">
               Имя*:
-              <input class="feedback-form__input" type="text" placeholder="Петр">
+              <input class="feedback-form__input" type="text" name="first-name" placeholder="Петр">
             </label>
             <label class="feedback-form__labeled-input">
               Фамилия*:
-              <input class="feedback-form__input" type="text" placeholder="Иванов">
+              <input class="feedback-form__input" type="text" name="last-name" placeholder="Иванов">
             </label>
             <label class="feedback-form__labeled-input">
               Отчество:
-              <input class="feedback-form__input" type="text" placeholder="Александрович">
+              <input class="feedback-form__input" type="text" name="surname" placeholder="Александрович">
             </label>
           </fieldset>
           <fieldset class="feedback-form__item">
@@ -62,11 +62,11 @@
             </legend>
             <label class="feedback-form__labeled-input">
               Контактный телефон*:
-              <input class="feedback-form__input feedback-form__input--phone" type="text" placeholder="Введите телефон">
+              <input class="feedback-form__input feedback-form__input--phone" type="text" name="phone" placeholder="Введите телефон">
             </label>
             <label class="feedback-form__labeled-input">
               Электронная почта*:
-              <input class="feedback-form__input feedback-form__input--email" type="email" placeholder="Введите e-mail">
+              <input class="feedback-form__input feedback-form__input--email" type="email" name="email" placeholder="Введите e-mail">
             </label>
           </fieldset>
           <fieldset class="feedback-form__item">
