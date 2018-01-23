@@ -1,0 +1,36 @@
+.map {
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  outline: 1px solid blue;
+}
+
+.map__title {
+  font-family: $default-font-family;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  text-transform: uppercase;
+}
+
+.map__text {
+  font-family: $default-font-family;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+
+  text-transform: uppercase;
+}
+
+.map__map {
+  width: 320px;
+  height: 350px;
+
+  background-color: #f3f1ed;
+  background-image: url("../img/bg-map-mobile@1x.jpg");
+}
