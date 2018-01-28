@@ -1,0 +1,35 @@
+.video {
+  margin: 0;
+  padding: 0;
+
+  outline: 1px solid orange;
+}
+
+.video__promo {
+  margin: 0;
+
+  font-family: $default-font-family;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+
+  text-transform: uppercase;
+}
+
+.video__text {
+  font-family: $default-font-family;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+
+  text-transform: uppercase;
+}
+
+.video__player {
+  width: 320px;
+  height: 201px;
+
+  outline: 1px dashed blue;
+}
