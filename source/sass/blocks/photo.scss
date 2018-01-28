@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
 
+  background-color: $color-background-main;
+
   outline: 1px solid blue;
 }
 
@@ -11,37 +13,26 @@
   width: 280px;
   height: 280px;
 
+  background-color: $color-background-photo;
+
   outline: 1px dashed purple;
 }
 
 .photo__title {
   margin: 0;
 
-  font-family: $default-font-family;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $color-main;
-
-  text-transform: uppercase;
+  @include font-main($font-size: 14px, $line-height: 24px);
 }
 
 .photo__author {
   margin: 0;
 
-  font-family: $default-font-family;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $color-secondary;
+  @include font-secondary;
+  text-transform: none;
 }
 
 .photo__like {
   margin: 0;
 
-  font-family: $default-font-family;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $color-main;
+  @include font-main($font-size: 14px, $line-height: 24px);
 }

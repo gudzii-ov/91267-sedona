@@ -2,29 +2,19 @@
   margin: 0;
   padding: 0;
 
+  background-color: $color-background-main;
+
   outline: 1px solid orange;
 }
 
 .video__promo {
   margin: 0;
 
-  font-family: $default-font-family;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $color-main;
-
-  text-transform: uppercase;
+  @include font-main($font-size: 18px);
 }
 
 .video__text {
-  font-family: $default-font-family;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $color-secondary;
-
-  text-transform: uppercase;
+  @include font-secondary;
 }
 
 .video__player {

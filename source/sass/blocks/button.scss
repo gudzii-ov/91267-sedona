@@ -3,16 +3,11 @@
   padding: 15px 0;
   width: 280px;
 
-  font-family: $default-font-family;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $color-reverted;
+  @include font-main($color-text: $color-text-reverted);
 
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
 
-  background-color: #81b3d2;
+  background-color: $color-background-button;
   border: none;
 }

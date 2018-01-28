@@ -2,31 +2,19 @@
   margin: 0;
   padding: 0;
 
+  background-color: $color-background-main;
+
   outline: 1px solid grey;
 }
 
 .reasons__promo {
   margin: 0;
 
-  font-family: $default-font-family;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $color-main;
-
-  text-align: center;
-  text-transform: uppercase;
+  @include font-main($font-size: 18px);
 }
 
 .reasons__intro {
-  font-family: $default-font-family;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: $color-secondary;
-
-  text-align: center;
-  text-transform: uppercase;
+  @include font-secondary($line-height: 26px);
 }
 
 .reasons__list {
@@ -37,39 +25,21 @@
 }
 
 .reasons__item {
-  text-align: center;
-
-  background-color: #eeeeee;
+  background-color: $color-background-reasons;
 }
 
 .reasons__title {
-  font-family: $default-font-family;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $color-main;
-
-  text-transform: uppercase;
+  @include font-main($font-size: 18px);
 }
 
 .reasons__number {
-  font-family: $default-font-family;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: $color-secondary;
+  @include font-secondary($line-height: 21px);
 }
 
 .reasons__clarification {
   margin: 0;
 
-  font-family: $default-font-family;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-  color: $color-secondary;
-
-  text-transform: uppercase;
+  @include font-secondary($line-height: 21px);
 }
 
 .reasons__photo {
@@ -78,7 +48,7 @@
   width: 320px;
   height: 260px;
 
-  background-color: #fdfffe;
+  background-color: $color-background-index-photo;
 }
 
 .reasons__extend {
@@ -87,30 +57,15 @@
 
   list-style: none;
 
-  background-color: $color-reverted;
-}
-
-.reasons__extend-item {
-  text-align: left;
+  background-color: $color-text-reverted;
 }
 
 .reasons__extend-title {
-  font-family: $default-font-family;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $color-secondary;
-
-  text-transform: uppercase;
+  @include font-main($font-size: 18px);
 }
 
 .reasons__extend-text {
   margin: 0;
 
-  font-family: $default-font-family;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 400;
-
-  text-transform: uppercase;
+  @include font-secondary($line-height: 21px);
 }

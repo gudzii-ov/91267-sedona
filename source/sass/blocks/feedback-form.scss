@@ -1,4 +1,6 @@
 .feedback-form {
+  background-color: $color-background-main;
+
   outline: 1px solid darkgreen;
 }
 
@@ -9,22 +11,9 @@
 }
 
 .feedback-form__legend {
-  font-family: $default-font-family;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $color-main;
-
-  text-align: center;
-  text-transform: uppercase;
+  @include font-main($font-size: 18px);
 }
 
 .feedback-form__labeled-input {
-  font-family: $default-font-family;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 400;
-  color: $color-secondary;
-
-  text-transform: uppercase;
+  @include font-secondary($line-height: 26px);
 }

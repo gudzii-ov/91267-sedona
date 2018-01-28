@@ -1,27 +1,13 @@
 .page-content {
-  background-color: $color-reverted;
+  background-color: $color-background-main;
 }
 
 .page-content__title {
   margin: 0;
 
-  font-family: $default-font-family;
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  color: $color-main;
-
-  text-align: center;
-  text-transform: uppercase;
+  @include font-main($font-size: 18px);
 }
 
 .page-content__intro {
-  font-family: $default-font-family;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $color-secondary;
-
-  text-align: center;
-  text-transform: uppercase;
+  @include font-secondary;
 }
