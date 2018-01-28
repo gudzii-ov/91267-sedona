@@ -1,5 +1,16 @@
 .page-footer {
+  padding: 23px 20px 23px 20px;
+
   background-color: $color-background-footer;
 
   outline: 1px solid magenta;
+}
+
+.page-footer__item {
+  display: inline-block;
+  margin-bottom: 41px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
