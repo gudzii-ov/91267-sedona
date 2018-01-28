@@ -1,5 +1,7 @@
 .reasons {
+  position: relative;
   margin: 0;
+  padding: 0;
 
   text-align: center;
 
@@ -13,11 +15,25 @@
   padding: 0;
 
   list-style: none;
+
+  &::before {
+    display: block;
+    position: absolute;
+
+    margin: 0;
+    width: 320px;
+    height: 37px;
+
+    content: "";
+
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .reasons__item {
-  margin: 0 -20px;
-  padding: 27px 0;
+  margin: 0;
+  padding: 27px 0 13px 0;
 
   background-color: $color-background-reasons;
 
@@ -27,6 +43,10 @@
     padding-bottom: 0;
 
     background-color: $color-background-button;
+  }
+
+  &--first {
+    padding-top: 66px;
   }
 }
 
@@ -45,7 +65,7 @@
 
 .reasons__number {
   margin: 0;
-  margin-top: 10px;
+  margin-top: 11px;
 
   @include font-secondary($line-height: 21px);
 
@@ -55,12 +75,12 @@
 }
 
 .reasons__clarification {
-  margin: 15px 35px 0 35px;
+  margin-top: 14px;
 
   @include font-secondary($line-height: 21px);
 
   &--important {
-    margin: 15px 20px 40px 20px;
+    margin: 15px 20px 39px 20px;
 
     color: $color-text-reverted;
   }
@@ -77,8 +97,8 @@
 }
 
 .reasons__extend {
-  margin: 0;
-  padding: 35px 41px 39px 70px;
+  margin: 0 -20px;
+  padding: 35px 41px 39px 90px;
 
   list-style: none;
   text-align: left;
