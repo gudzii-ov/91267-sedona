@@ -1,13 +1,17 @@
 .map {
-  margin: 0;
-  padding: 0;
+  padding-top: 26px;
 
   background-color: $color-background-main;
+
+  text-align: center;
 
   outline: 1px solid blue;
 }
 
 .map__title {
+  display: inline-block;
+  margin-bottom: 5px;
+
   @include font-main;
 }
 
@@ -15,9 +19,16 @@
   @include font-secondary;
 }
 
+.map__button {
+  margin-top: 36px;
+  margin-bottom: 49px;
+}
+
 .map__map {
-  width: 320px;
-  height: 350px;
+  margin: 0 -20px;
+
+  max-width: 100%;
+  height: auto;
 
   background-color: $color-background-map;
   background-image: url("../img/bg-map-mobile@1x.jpg");
