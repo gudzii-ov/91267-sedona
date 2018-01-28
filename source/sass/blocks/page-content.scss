@@ -1,5 +1,5 @@
 .page-content {
-  background-color: #ffffff;
+  background-color: $color-reverted;
 }
 
 .page-content__title {
@@ -9,7 +9,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: $color-main;
 
   text-align: center;
   text-transform: uppercase;
@@ -20,7 +20,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  color: #333333;
+  color: $color-secondary;
 
   text-align: center;
   text-transform: uppercase;

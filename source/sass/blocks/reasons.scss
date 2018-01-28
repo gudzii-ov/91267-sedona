@@ -12,7 +12,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: $color-main;
 
   text-align: center;
   text-transform: uppercase;
@@ -23,7 +23,7 @@
   font-size: 14px;
   line-height: 26px;
   font-weight: 400;
-  color: #333333;
+  color: $color-secondary;
 
   text-align: center;
   text-transform: uppercase;
@@ -47,7 +47,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #000000;
+  color: $color-main;
 
   text-transform: uppercase;
 }
@@ -57,7 +57,7 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
+  color: $color-secondary;
 }
 
 .reasons__clarification {
@@ -67,7 +67,7 @@
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
+  color: $color-secondary;
 
   text-transform: uppercase;
 }
@@ -87,7 +87,7 @@
 
   list-style: none;
 
-  background-color: #ffffff;
+  background-color: $color-reverted;
 }
 
 .reasons__extend-item {
@@ -99,7 +99,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
-  color: #333333;
+  color: $color-secondary;
 
   text-transform: uppercase;
 }
