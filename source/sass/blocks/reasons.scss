@@ -26,20 +26,36 @@
 
 .reasons__item {
   background-color: $color-background-reasons;
+
+  &--important {
+    background-color: $color-background-button;
+  }
 }
 
 .reasons__title {
   @include font-main($font-size: 18px);
+
+  &--important {
+    color: $color-text-reverted;
+  }
 }
 
 .reasons__number {
   @include font-secondary($line-height: 21px);
+
+  &--important {
+    color: $color-text-reverted;
+  }
 }
 
 .reasons__clarification {
   margin: 0;
 
   @include font-secondary($line-height: 21px);
+
+  &--important {
+    color: $color-text-reverted;
+  }
 }
 
 .reasons__photo {
