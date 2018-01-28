@@ -17,14 +17,14 @@
   list-style: none;
 
   &::before {
+    content: "";
+
     display: block;
     position: absolute;
 
     margin: 0;
     width: 320px;
     height: 37px;
-
-    content: "";
 
     background-image: url("../img/bg-triangle.svg");
     background-repeat: no-repeat;
@@ -97,8 +97,8 @@
 }
 
 .reasons__extend {
-  margin: 0 -20px;
-  padding: 35px 41px 39px 90px;
+  margin: 0;
+  padding: 35px 41px 39px 70px;
 
   list-style: none;
   text-align: left;
