@@ -3,14 +3,17 @@
   padding: 0;
 
   list-style: none;
+  text-align: center;
 }
 
 .nav-list__link {
   display: block;
+  padding: 7px 20px;
 
   @include font-main($font-size: 18px, $line-height: 40px, $color-text: $color-text-reverted);
 
   text-decoration: none;
 
   background-color: $color-background-button;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
