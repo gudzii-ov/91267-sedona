@@ -7,16 +7,6 @@
   outline: 1px solid grey;
 }
 
-.reasons__promo {
-  margin: 0;
-
-  @include font-main($font-size: 18px);
-}
-
-.reasons__intro {
-  @include font-secondary($line-height: 26px);
-}
-
 .reasons__list {
   margin: 0;
   padding: 0;
@@ -26,6 +16,8 @@
 
 .reasons__item {
   background-color: $color-background-reasons;
+
+  outline: 1px dashed grey;
 
   &--important {
     background-color: $color-background-button;
@@ -61,8 +53,8 @@
 .reasons__photo {
   display: block;
 
-  width: 320px;
-  height: 260px;
+  max-width: 100%;
+  height: auto;
 
   background-color: $color-background-index-photo;
 }

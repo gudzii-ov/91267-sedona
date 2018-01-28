@@ -10,8 +10,8 @@
 .photo__image {
   display: block;
 
-  width: 280px;
-  height: 280px;
+  max-width: 100%;
+  height: auto;
 
   background-color: $color-background-photo;
 
