@@ -1,15 +1,27 @@
 .page-content {
+  padding: 43px 0 10px 0;
+
   background-color: $color-background-main;
 
   outline: 2px solid pink;
 }
 
 .page-content__title {
-  margin: 0;
+  margin: 0 27px 28px 27px;
 
   @include font-main($font-size: 18px);
+
+  text-align: center;
 }
 
 .page-content__intro {
+  margin: 0 27px 10px 27px;
+
   @include font-secondary;
+
+  text-align: center;
+}
+
+.page-content__item {
+  padding: 0 20px;
 }

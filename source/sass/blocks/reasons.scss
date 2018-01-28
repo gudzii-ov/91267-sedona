@@ -1,6 +1,7 @@
 .reasons {
   margin: 0;
-  padding: 0;
+
+  text-align: center;
 
   background-color: $color-background-main;
 
@@ -15,24 +16,37 @@
 }
 
 .reasons__item {
+  margin: 0 -20px;
+  padding: 27px 0;
+
   background-color: $color-background-reasons;
 
   outline: 1px dashed grey;
 
   &--important {
+    padding-bottom: 0;
+
     background-color: $color-background-button;
   }
 }
 
 .reasons__title {
+  display: block;
+  margin: 0;
+
   @include font-main($font-size: 18px);
 
   &--important {
+    margin-top: 10px;
+
     color: $color-text-reverted;
   }
 }
 
 .reasons__number {
+  margin: 0;
+  margin-top: 10px;
+
   @include font-secondary($line-height: 21px);
 
   &--important {
@@ -41,17 +55,20 @@
 }
 
 .reasons__clarification {
-  margin: 0;
+  margin: 15px 35px 0 35px;
 
   @include font-secondary($line-height: 21px);
 
   &--important {
+    margin: 15px 20px 40px 20px;
+
     color: $color-text-reverted;
   }
 }
 
 .reasons__photo {
   display: block;
+  margin: 0;
 
   max-width: 100%;
   height: auto;
@@ -61,19 +78,28 @@
 
 .reasons__extend {
   margin: 0;
-  padding: 0;
+  padding: 35px 41px 39px 70px;
 
   list-style: none;
+  text-align: left;
 
   background-color: $color-text-reverted;
 }
 
 .reasons__extend-title {
+  display: inline-block;
+  margin-bottom: 13px;
+
   @include font-main($font-size: 18px);
 }
 
 .reasons__extend-text {
   margin: 0;
+  margin-bottom: 29px;
 
   @include font-secondary($line-height: 21px);
+
+  &--last {
+    margin-bottom: 0;
+  }
 }
