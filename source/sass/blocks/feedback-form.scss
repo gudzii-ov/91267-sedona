@@ -1,4 +1,6 @@
 .feedback-form {
+  margin: 0 -20px;
+
   background-color: $color-background-main;
 
   outline: 1px solid darkgreen;
@@ -6,14 +8,44 @@
 
 .feedback-form__item {
   display: flex;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 25px 20px;
 
   border: none;
+
+  outline: 1px dashed red;
 }
 
 .feedback-form__legend {
+  padding: 0;
+  padding-top: 25px;
+
   @include font-main($font-size: 18px);
+
+  text-align: center;
 }
 
 .feedback-form__labeled-input {
   @include font-secondary($line-height: 26px);
+}
+
+.feedback-form__input,
+.feedback-form__textarea {
+  margin: 0 auto;
+  padding: 15px 10px;
+  width: 280px;
+  height: 160px;
+
+  @include font-main($font-size: 18px);
+
+  background-color: $color-background-input;
+  border: none;
+
+  text-transform: none;
+}
+
+.feedback-form__button {
+  margin: 18px auto 42px auto;
 }
