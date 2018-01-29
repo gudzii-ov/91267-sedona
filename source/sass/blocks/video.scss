@@ -1,0 +1,34 @@
+.video {
+  margin: 0;
+  padding: 32px 41px;
+
+  text-align: center;
+
+  background-color: $color-background-main;
+
+  outline: 1px solid orange;
+}
+
+.video__promo {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @include font-main($font-size: 18px);
+}
+
+.video__text {
+  display: inline-block;
+  margin-bottom: 35px;
+
+  @include font-secondary;
+}
+
+.video__player {
+  margin: 0 -41px;
+
+  width: 320px;
+  height: 201px;
+
+  outline: 1px dashed blue;
+}

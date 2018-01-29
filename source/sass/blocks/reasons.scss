@@ -1,0 +1,125 @@
+.reasons {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  background-color: $color-background-main;
+
+  outline: 1px solid grey;
+}
+
+.reasons__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  &::before {
+    content: "";
+
+    display: block;
+    position: absolute;
+
+    margin: 0;
+    width: 320px;
+    height: 37px;
+
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+.reasons__item {
+  margin: 0;
+  padding: 27px 0 13px 0;
+
+  background-color: $color-background-reasons;
+
+  outline: 1px dashed grey;
+
+  &--important {
+    padding-bottom: 0;
+
+    background-color: $color-background-button;
+  }
+
+  &--first {
+    padding-top: 66px;
+  }
+}
+
+.reasons__title {
+  display: block;
+  margin: 0;
+
+  @include font-main($font-size: 18px);
+
+  &--important {
+    margin-top: 10px;
+
+    color: $color-text-reverted;
+  }
+}
+
+.reasons__number {
+  margin: 0;
+  margin-top: 11px;
+
+  @include font-secondary($line-height: 21px);
+
+  &--important {
+    color: $color-text-reverted;
+  }
+}
+
+.reasons__clarification {
+  margin-top: 14px;
+
+  @include font-secondary($line-height: 21px);
+
+  &--important {
+    margin: 15px 20px 39px 20px;
+
+    color: $color-text-reverted;
+  }
+}
+
+.reasons__photo {
+  display: block;
+  margin: 0;
+
+  max-width: 100%;
+  height: auto;
+
+  background-color: $color-background-index-photo;
+}
+
+.reasons__extend {
+  margin: 0;
+  padding: 35px 41px 39px 70px;
+
+  list-style: none;
+  text-align: left;
+
+  background-color: $color-text-reverted;
+}
+
+.reasons__extend-title {
+  display: inline-block;
+  margin-bottom: 13px;
+
+  @include font-main($font-size: 18px);
+}
+
+.reasons__extend-text {
+  margin: 0;
+  margin-bottom: 29px;
+
+  @include font-secondary($line-height: 21px);
+
+  &--last {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,45 @@
+.photo {
+  margin: 0;
+  padding: 0 20px;
+
+  background-color: $color-background-main;
+
+  outline: 1px solid blue;
+}
+
+.photo__item {
+  padding-top: 22px;
+  padding-bottom: 18px;
+
+  outline: 1px dashed purple;
+}
+
+.photo__image {
+  display: block;
+
+  max-width: 100%;
+  height: auto;
+
+  background-color: $color-background-photo;
+}
+
+.photo__title {
+  margin: 0;
+  margin-top: 15px;
+
+  @include font-main($font-size: 14px, $line-height: 24px);
+}
+
+.photo__author {
+  margin: 0;
+  margin-bottom: 8px;
+
+  @include font-secondary;
+  text-transform: none;
+}
+
+.photo__like {
+  margin: 0;
+
+  @include font-main($font-size: 14px, $line-height: 24px);
+}

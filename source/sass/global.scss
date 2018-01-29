@@ -1,0 +1,20 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0 auto;
+  width: 320px;
+
+  background-color: $color-text-reverted;
+}
+
+img {
+  max-width: 100%;
+}
