@@ -9,20 +9,20 @@
 }
 
 .page-content__wrapper {
-    &::after {
-      display: block;
+  &::after {
+    display: block;
 
-      margin: 0;
-      width: 320px;
-      height: 37px;
+    margin: 0;
+    width: 320px;
+    height: 37px;
 
-      background-color: $color-background-button;
-      background-image: url("../img/bg-triangle.svg");
-      background-repeat: no-repeat;
-      background-position: 50%;
+    background-color: $color-background-button;
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
 
-      content: "";
-    }
+    content: "";
+  }
 }
 
 .page-content__title {
