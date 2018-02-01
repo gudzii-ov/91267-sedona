@@ -5,11 +5,12 @@
     <meta charset="utf-8">
     <title>Sedona</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
   </head>
 
   <body>
     <header class="page-header page-header--index">
-      <nav class="main-nav">
+      <nav class="page-header__nav main-nav">
         <ul class="main-nav__list nav-list">
           <li class="nav-list__item">
             <a class="nav-list__link">Главная</a>
@@ -17,33 +18,41 @@
           <li class="nav-list__item">
             <a class="nav-list__link" href="media.html">Фото и видео</a>
           </li>
+          <li class="nav-list__item nav-list__item--logo">
+            <a class="nav-list__link nav-list__link--logo">
+              <img class="nav-list__logo-picture" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona Logo">
+            </a>
+            <button class="nav-list__toggler" type="button">Меню</button>
+          </li>
           <li class="nav-list__item">
             <a class="nav-list__link" href="form.html">Форма отзыва</a>
           </li>
           <li class="nav-list__item">
-            <a class="nav-list__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+            <a class="nav-list__link nav-list__link--last" href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
           </li>
         </ul>
       </nav>
-      <img class="page-header__logo" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Sedona Logo">
-      <button class="page-header__toggler" type="button">Меню</button>
       <img class="page-header__promo page-header__promo--index" src="img/text-sedona-index.svg" width="282" height="214" alt="Добро пожаловать в Седону">
     </header>
     <main class="page-content">
       <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <p class="page-content__title">
-        Седона — небольшой городок в Аризоне, заслуживающий большего!
-      </p>
-      <p class="page-content__intro">
-        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-      </p>
+      <div class="page-content__wrapper">
+        <p class="page-content__title">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </p>
+        <p class="page-content__intro">
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
+      </div>
       <section class="page-content__item reasons">
         <h2 class="visually-hidden">5 причин посетить Седону</h2>
         <ul class="reasons__list">
-          <li class="reasons__item reasons__item--important reasons__item--first">
-            <strong class="reasons__title reasons__title--important">Настоящий городок</strong>
-            <p class="reasons__number reasons__number--important">— №1 —</p>
-            <p class="reasons__clarification reasons__clarification--important">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <li class="reasons__item reasons__item--important">
+            <div class="reasons__wrapper">
+              <strong class="reasons__title reasons__title--important">Настоящий городок</strong>
+              <p class="reasons__number reasons__number--important">— №1 —</p>
+              <p class="reasons__clarification reasons__clarification--important">Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
             <img class="reasons__photo" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Мотель">
             <ul class="reasons__extend">
               <li class="reasons__extend-item">
@@ -67,9 +76,11 @@
             </ul>
           </li>
           <li class="reasons__item reasons__item--important">
-            <strong class="reasons__title reasons__title--important">Там есть Мост Дьявола</strong>
-            <p class="reasons__number reasons__number--important">— №2 —</p>
-            <p class="reasons__clarification reasons__clarification--important">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            <div class="reasons__wrapper reasons__wrapper--second">
+              <strong class="reasons__title reasons__title--important">Там есть Мост Дьявола</strong>
+              <p class="reasons__number reasons__number--important">— №2 —</p>
+              <p class="reasons__clarification reasons__clarification--important">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+            </div>
             <img class="reasons__photo" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
           </li>
           <li class="reasons__item">

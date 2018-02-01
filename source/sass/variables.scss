@@ -1,3 +1,7 @@
+/* Размеры экрана */
+$tablet-width: 768px;
+$desktop-width: 1280px;
+
 /* Шрифт по-умолчанию */
 $default-font-family: "PT Sans", "Helvetica", sans-serif;
 
@@ -12,4 +16,4 @@ $color-background-map:          #f3f1ed;
 $color-background-photo:        #776a0a;
 $color-background-index-photo:  #fdfffe;
 $color-background-reasons:      #eeeeee;
-$color-background-input:        #f2f2f2;
+$color-background-body:        #f2f2f2;
