@@ -1,11 +1,8 @@
 .nav-list {
+  @include list-reset;
+
   display: flex;
   flex-direction: column;
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
 
   outline: 1px dashed black;
   outline-offset: -1px;
