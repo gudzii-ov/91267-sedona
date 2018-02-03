@@ -1,41 +1,50 @@
 .reasons {
   margin: 0;
   padding: 0;
+  padding-bottom: 2px;
 
   text-align: center;
 
-  background-color: $color-background-main;
-
-  outline: 1px solid grey;
+  background-color: $color-background-reasons;
 }
 
 .reasons__list {
   @include list-reset;
+
+  padding: 0 20px;
 }
 
 .reasons__item {
   margin: 0;
-  padding: 27px 0 13px 0;
+  padding: 27px 0;
 
   background-color: $color-background-reasons;
 
-  outline: 1px dashed grey;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+  &:last-of-type {
+    border: none;
+  }
 
   &--important {
-    padding-bottom: 0;
+    margin: 0 -20px;
+    padding: 26px 0 0 0;
 
     background-color: $color-background-button;
+    border: none;
   }
 }
 
 .reasons__title {
   display: block;
   margin: 0;
+  margin-bottom: 9px;
 
   @include font-main($font-size: 18px);
 
   &--important {
-    margin-top: 10px;
+    margin-top: 14px;
+    margin-bottom: 9px;
 
     color: $color-text-reverted;
   }
@@ -43,7 +52,7 @@
 
 .reasons__number {
   margin: 0;
-  margin-top: 11px;
+  margin-bottom: 14px;
 
   @include font-secondary($line-height: 21px);
 
@@ -53,12 +62,12 @@
 }
 
 .reasons__clarification {
-  margin-top: 14px;
+  margin: 0 15px;
 
   @include font-secondary($line-height: 21px);
 
   &--important {
-    margin: 15px 20px 39px 20px;
+    margin: 15px 20px 40px 20px;
 
     color: $color-text-reverted;
   }
@@ -77,7 +86,7 @@
 .reasons__extend {
   @include list-reset;
 
-  padding: 35px 41px 39px 70px;
+  padding: 35px 41px 37px 70px;
 
   text-align: left;
 
@@ -85,15 +94,59 @@
 }
 
 .reasons__extend-title {
+  position: relative;
+
   display: inline-block;
-  margin-bottom: 13px;
+  margin-bottom: 14px;
 
   @include font-main($font-size: 18px);
+
+  &::before {
+    position: absolute;
+
+    display: block;
+
+    content: "";
+
+    background-color: $color-background-main;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &--lodging::before {
+    top: -9px;
+    left: -48px;
+
+    width: 39px;
+    height: 36px;
+
+    background-image: url("../img/icon-house.svg");
+  }
+
+  &--souvenir::before {
+    top: -11px;
+    left: -44px;
+
+    width: 33px;
+    height: 38px;
+
+    background-image: url("../img/icon-gift.svg");
+  }
+
+  &--food::before {
+    top: -5px;
+    left: -51px;
+
+    width: 40px;
+    height: 35px;
+
+    background-image: url("../img/icon-burger.svg");
+  }
 }
 
 .reasons__extend-text {
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 28px;
 
   @include font-secondary($line-height: 21px);
 

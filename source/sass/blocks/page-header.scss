@@ -11,25 +11,24 @@
   background-repeat: no-repeat;
   background-position: 50% 279px;
 
-  outline: 1px solid red;
-
   &::after {
     display: block;
 
     margin: 0 -20px;
     padding: 0;
-    min-width: 320px;
+    width: 320px;
     height: 27px;
 
     background-image: url("../img/bg-intro-triangle-mobile.svg");
     background-repeat: no-repeat;
     background-position: 50%;
+    background-size: cover;
 
     content: "";
   }
 
   &--index {
-    background-position: 50% 279px;
+    background-position: 50% 278px;
   }
 }
 
@@ -45,7 +44,7 @@
   padding: 0;
 
   &--index {
-    margin-top: 89px;
+    margin-top: 88px;
     margin-bottom: 58px;
   }
 }
