@@ -1,3 +1,5 @@
 .hashtag {
+  display: inline-block;
+
   @include font-main;
 }

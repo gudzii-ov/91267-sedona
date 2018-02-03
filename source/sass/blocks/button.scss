@@ -1,6 +1,6 @@
 .button {
   display: block;
-  padding: 15px 0;
+  padding: 16px 0 16px 0;
   width: 280px;
 
   @include font-main($color-text: $color-text-reverted);
@@ -10,4 +10,18 @@
 
   background-color: $color-background-button;
   border: none;
+
+  &:hover {
+    background-color: $color-background-button-hover;
+  }
+
+  &:active {
+    opacity: 0.2;
+
+    background-color: $color-background-button-active;
+  }
+
+  &[disabled] {
+    background-color: $color-background-button-disabled;
+  }
 }
