@@ -2,25 +2,42 @@
   margin: 0 -20px;
 
   background-color: $color-background-main;
-
-  outline: 1px solid darkgreen;
 }
 
 .feedback-form__item {
+  position: relative;
+
   display: flex;
   flex-direction: column;
 
+  flex-basis: 320px;
   margin: 0;
-  padding: 25px 20px;
+  padding: 0 20px;
 
   border: none;
 
-  outline: 1px dashed red;
+  outline: 2px solid red;
+  outline-offset: -2px;
+
+  // &::before {
+  //   position: absolute;
+  //   top: 0;
+  //
+  //   display: block;
+  //
+  //   width: 320px;
+  //   height: 1px;
+  //   margin: 0 -20px;
+  //
+  //   background-color: $color-border-grey;
+  //
+  //   content: "";
+  // }
 }
 
 .feedback-form__legend {
   padding: 0;
-  padding-top: 25px;
+  padding-top: 19px;
 
   @include font-main($font-size: 18px);
 
@@ -29,6 +46,11 @@
 
 .feedback-form__labeled-input {
   @include font-secondary($line-height: 26px);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .feedback-form__input,
@@ -85,8 +107,6 @@
     flex-direction: row;
     align-items: baseline;
     justify-content: space-between;
-
-    outline: 3px solid red;
   }
 
   .feedback-form__button {
