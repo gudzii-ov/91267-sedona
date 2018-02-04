@@ -76,7 +76,11 @@
   .page-content__title {
     margin: 40px 100px 28px 100px;
 
-    font-size: 21px;
+    font-size: 30px;
+
+    &--index {
+      font-size: 21px;
+    }
   }
 
   .page-content__intro {
