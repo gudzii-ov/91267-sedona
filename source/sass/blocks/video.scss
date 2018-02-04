@@ -1,12 +1,12 @@
 .video {
   margin: 0;
-  padding: 32px 41px;
+  padding: 32px 41px 32px 41px;
 
   text-align: center;
 
   background-color: $color-background-main;
 
-  outline: 1px solid orange;
+  border-top: 1px solid $color-background-grey;
 }
 
 .video__promo {
@@ -29,6 +29,4 @@
 
   width: 320px;
   height: 201px;
-
-  outline: 1px dashed blue;
 }

@@ -19,8 +19,7 @@
   background-color: $color-background-main;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position-x: 50%;
-  background-position-y: 279px;
+  background-position: 50% -232px;
 
   &::after {
     display: block;
@@ -44,8 +43,8 @@
 
 .page-header__promo {
   display: block;
-  margin: 0 auto;
-  margin-top: 19px;
+  margin: 50px auto 40px auto;
+  margin-top: 50px;
   padding: 0;
 
   &--index {
