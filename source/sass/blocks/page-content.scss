@@ -1,9 +1,13 @@
 .page-content {
   width: 320px;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 9px 0;
 
   background-color: $color-background-main;
+
+  &--index {
+    padding: 10px 0;
+  }
 }
 
 .page-content__wrapper {
@@ -25,19 +29,31 @@
 }
 
 .page-content__title {
-  margin: 30px 27px 28px 27px;
+  margin: 30px 27px 25px 27px;
 
   @include font-main($font-size: 18px);
 
   text-align: center;
+
+  &--index {
+    margin: 30px 27px 28px 27px;
+  }
 }
 
 .page-content__intro {
-  margin: 0 27px 6px 27px;
+  margin: 0 25px 6px 25px;
 
   @include font-secondary($line-height: 25px);
 
   text-align: center;
+
+  &--form {
+    margin: 0 20px 6px 20px;
+  }
+
+  &--media {
+    margin-bottom: 25px;
+  }
 }
 
 .page-content__item {
