@@ -3,6 +3,8 @@
 
   width: 48px;
   height: 48px;
+  margin-left: 1px;
+  margin-right: 1px;
 
   font-size: 0;
 
@@ -31,4 +33,11 @@
 
 .social__link--youtube {
   background-image: url("../img/icon-youtube.svg");
+}
+
+@media (min-width: $tablet-width) {
+  .social__link {
+    margin-left: 3px;
+    margin-right: 3px;
+  }
 }

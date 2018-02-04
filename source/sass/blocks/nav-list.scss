@@ -88,3 +88,15 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .nav-list__item {
+    flex-basis: 239px;
+
+    background-color: $color-background-main;
+
+    &--logo {
+      flex-basis: 244px;
+    }
+  }
+}

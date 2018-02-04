@@ -65,3 +65,17 @@
     margin-bottom: 58px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .map {
+    padding: 28px 371px 0 371px;
+  }
+
+  .map__text {
+    margin-bottom: 47px;
+  }
+
+  .map__button {
+    margin-bottom: 65px;
+  }
+}

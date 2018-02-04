@@ -283,8 +283,12 @@
   .reasons__item {
     flex-basis: 400px;
 
+    padding-bottom: 62px;
+
     &--important {
       flex-basis: 1200px;
+
+      padding: 0;
     }
   }
 
@@ -292,7 +296,35 @@
     flex-basis: 400px;
   }
 
+  .reasons__title {
+    margin: 0 75px 10px 75px;
+
+    &--important {
+      margin-top: 52px;
+    }
+  }
+
+  .reasons__number {
+    margin-bottom: 22px;
+
+    &--important {
+      margin-bottom: 6px;
+    }
+  }
+
   .reasons__extend {
     flex-basis: 1200px;
+  }
+
+  .reasons__extend-item {
+    flex-basis: 400px;
+
+    padding: 61px 45px 83px 45px;
+
+    text-align: center;
+
+    &--souvenir {
+      order: 2;
+    }
   }
 }
