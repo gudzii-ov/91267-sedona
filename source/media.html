@@ -98,7 +98,19 @@
         <p class="video__text">
           Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
         </p>
-        <video class="video__player" width="320" height="201" poster="../img/video-mobile@1x.jpg" controls src="#"></video>
+        <div class="video__player-container">
+          <video class="video__player" width="320" height="201" poster="../img/video-mobile@1x.jpg" src="#"></video>
+          <div class="video__custom-controls">
+            <div class="video__wrapper-up">
+              <div class="video__seek-bar"></div>
+            </div>
+            <div class="video__wrapper-down">
+              <button class="video__control-button video__control-button--replay" type="button">Повтор</button>
+              <button class="video__control-button video__control-button--subtitles" type="button">Субтитры</button>
+              <button class="video__control-button video__control-button--fullscreen" type="button">Полный экран</button>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
