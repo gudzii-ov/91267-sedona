@@ -1,6 +1,5 @@
 .map {
-  // margin: 0 -20px;
-  padding: 28px 0 0 0;
+  padding: 28px 20px 0 20px;
 
   background-color: $color-background-main;
 
@@ -17,20 +16,52 @@
 .map__text {
   @include font-secondary;
 
-  margin: 0 20px;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 .map__button {
-  margin: 35px auto 49px auto;
+  width: 100%;
+  margin-bottom: 49px;
 }
 
 .map__map {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
 
-  max-width: 100%;
+  width: 100vw;
   height: 350px;
 
   background-color: $color-background-map;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.map__map iframe {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    padding: 28px 155px 0 155px;
+  }
+
+  .map__title {
+    margin-top: 28px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+  }
+
+  .map__text {
+    margin-bottom: 42px;
+  }
+
+  .map__button {
+    margin-bottom: 58px;
+  }
 }

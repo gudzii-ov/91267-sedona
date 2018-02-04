@@ -18,10 +18,10 @@
 }
 
 .nav-list__link {
+  @include font-main($font-size: 18px, $line-height: 56px, $color-text: $color-text-reverted);
+
   height: 56px;
   display: block;
-
-  @include font-main($font-size: 18px, $line-height: 56px, $color-text: $color-text-reverted);
 
   text-decoration: none;
 
@@ -61,15 +61,30 @@
 @media (min-width: $tablet-width) {
   .nav-list {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav-list__item {
+    flex-basis: 153px;
+
+    background-color: $color-background-main;
+
     &--logo {
+      flex-basis: 156px;
+
       order: 0;
+      background-color: transparent;
     }
   }
 
   .nav-list__link {
-    background-color: none;
+    font-size: 14px;
+    color: $color-text-main;
+
+    background-color: $color-background-main;
+
+    &--last {
+      box-shadow: none;
+    }
   }
 }
