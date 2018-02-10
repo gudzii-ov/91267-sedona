@@ -11,8 +11,6 @@
 }
 
 .page-footer__item {
-  display: inline-block;
-
   margin-bottom: 36px;
 
   &:last-child {
@@ -26,7 +24,7 @@
     justify-content: center;
 
     width: 768px;
-    padding: 26px 0 60px 0;
+    padding: 23px 60px 60px 60px;
   }
 
   .page-footer__item {
@@ -38,6 +36,10 @@
     align-items: center;
 
     margin-bottom: 0;
+
+    &:last-child {
+      justify-content: flex-end;
+    }
   }
 }
 
@@ -48,11 +50,9 @@
 
   .page-footer__item {
     flex-basis: 400px;
-  }
 
-  .page-footer__item:last-child {
-    justify-content: flex-end;
-
-    padding-right: 45px;
+    &:last-child {
+      padding-right: 45px;
+    }
   }
 }

@@ -20,7 +20,6 @@
 .video__text {
   display: inline-block;
   margin: 0 41px 35px 42px;
-  // margin-bottom: 35px;
 
   @include font-secondary;
 }
@@ -122,4 +121,67 @@
 .video__player {
   width: 320px;
   height: 201px;
+}
+
+@media (min-width: $tablet-width) {
+  .video {
+    padding-bottom: 40px;
+
+    border: none;
+  }
+
+  .video__promo {
+    margin-top: 35px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+  }
+
+  .video__text {
+    margin: 0 170px 73px 170px;
+  }
+
+  .video__player {
+    width: 648px;
+    height: 499px;
+  }
+
+  .video__custom-controls {
+    bottom: 4px;
+
+    width: 648px;
+    height: 93px;
+  }
+
+  .video__wrapper-up {
+    position: absolute;
+
+    bottom: 22px;
+    left: 93px;
+
+    background-color: transparent;
+  }
+
+  .video__seek-bar {
+    width: 389px;
+
+    &::before {
+      left: 114px;
+    }
+  }
+
+  .video__wrapper-down {
+    height: 93px;
+    padding: 0 41px 0 35px;
+
+    background-color: $color-video-control-upper;
+  }
+
+  .video__control-button {
+    background-color: transparent;
+  }
+
+  .video__control-button--fullscreen {
+    margin-left: 31px;
+  }
 }
