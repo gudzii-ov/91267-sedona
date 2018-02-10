@@ -71,6 +71,10 @@
     }
   }
 
+  .page-content__item {
+    padding: 0 60px;
+  }
+
   .page-content__title {
     margin: 65px 100px 32px 100px;
 
@@ -92,6 +96,10 @@
     &--index {
       margin: 0 130px 53px 130px;
     }
+
+    &--form {
+      margin: 0 165px 73px 165px;
+    }
   }
 }
 
@@ -108,6 +116,10 @@
     }
   }
 
+  .page-content__item {
+    // padding: 0 60px;
+  }
+
   .page-content__title {
     margin: 101px 355px 32px 355px;
   }
@@ -115,6 +127,4 @@
   .page-content__intro {
     margin: 0 380px 50px 380px;
   }
-
-
 }
