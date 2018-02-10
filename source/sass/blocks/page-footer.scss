@@ -54,12 +54,18 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     width: 1200px;
+    padding: 23px 0 60px 0;
   }
 
   .page-footer__item {
     flex-basis: 400px;
 
+    &:first-child {
+      justify-content: center;
+    }
+
     &:last-child {
+      justify-content: flex-end;
       padding-right: 45px;
     }
   }

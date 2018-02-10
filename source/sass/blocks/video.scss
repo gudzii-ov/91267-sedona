@@ -185,3 +185,32 @@
     margin-left: 31px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .video__promo {
+    margin-top: 39px;
+  }
+
+  .video__text {
+    margin: 0 390px 72px 390px;
+  }
+
+  .video__player {
+    width: 800px;
+    height: 500px;
+    margin-bottom: 45px;
+
+    outline: 1px solid red;
+  }
+
+  .video__custom-controls {
+    bottom: 50px;
+
+    width: 800px;
+    height: 93px;
+  }
+
+  .video__seek-bar {
+    width: 540px;
+  }
+}

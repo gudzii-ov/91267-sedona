@@ -147,10 +147,13 @@
 
 @media (min-width: $desktop-width) {
   .photo {
+    margin-top: 71px;
     padding: 0;
   }
 
   .photo__item {
+    position: relative;
+
     flex-basis: 400px;
 
     display: flex;
@@ -171,10 +174,37 @@
   }
 
   .photo__info {
-    flex-basis: 400px;
+    position: absolute;
+    bottom: 0;
+
+    width: 400px;
+
+    background-color: $color-background-black-60;
 
     &--best {
-      flex-basis: 1200px;
+      width: 1200px;
     }
+  }
+
+  .photo__item:nth-child(2n) .photo__info {
+    background-color: $color-background-black-60;
+
+    &--best {
+      background-color: $color-background-black-60;
+    }
+  }
+
+  .photo__info-wrapper {
+    flex-basis: 295px;
+
+    &--best {
+      flex-basis: 1095px;
+    }
+  }
+
+  .photo__title,
+  .photo__author,
+  .photo__like {
+    color: $color-text-reverted;
   }
 }
