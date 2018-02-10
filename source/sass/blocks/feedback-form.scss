@@ -1,47 +1,63 @@
 .feedback-form {
-  margin: 0 -20px;
-
   background-color: $color-background-main;
+
+  outline: 1px solid green;
 }
 
 .feedback-form__item {
-  position: relative;
+  margin: 0 -20px;
+  padding: 18px 20px 22px 20px;
 
+  border-top: 1px solid $color-border-grey;
+
+  &--contacts {
+    padding-bottom: 24px;
+  }
+
+  &--impression {
+    padding-bottom: 17px;
+  }
+
+  &--sight {
+    padding-bottom: 15px;
+  }
+
+  &--textarea {
+    padding-bottom: 30px;
+  }
+}
+
+.feedback-form__fieldset {
   display: flex;
   flex-direction: column;
 
   flex-basis: 320px;
   margin: 0;
-  padding: 0 20px;
+  padding: 0 0 3px 0;
 
   border: none;
-
-  outline: 2px solid red;
-  outline-offset: -2px;
-
-  // &::before {
-  //   position: absolute;
-  //   top: 0;
-  //
-  //   display: block;
-  //
-  //   width: 320px;
-  //   height: 1px;
-  //   margin: 0 -20px;
-  //
-  //   background-color: $color-border-grey;
-  //
-  //   content: "";
-  // }
 }
 
 .feedback-form__legend {
+  margin: 0;
+  margin-bottom: 21px;
   padding: 0;
-  padding-top: 19px;
 
   @include font-main($font-size: 18px);
 
   text-align: center;
+
+  &--impression {
+    margin-bottom: 37px;
+  }
+
+  &--sight {
+    margin-bottom: 31px;
+  }
+
+  &--textarea {
+    margin-bottom: 17px;
+  }
 }
 
 .feedback-form__labeled-input {
@@ -49,14 +65,146 @@
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: baseline;
+
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--contacts {
+    flex-direction: column;
+
+    margin-bottom: 12px;
+  }
+
+  &--sight {
+    margin-bottom: 31px;
+  }
+}
+
+.feedback-form__label {
+  margin-right: 14px;
+
+  &--contacts {
+    margin-bottom: 7px;
+    margin-left: 22px;
+  }
+
+  &--impression {
+    position: relative;
+
+    display: block;
+
+    margin: 0;
+    padding-left: 78px;
+    padding-bottom: 23px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-text-main;
+
+    text-transform: none;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -14px;
+
+      display: block;
+
+      width: 56px;
+      height: 56px;
+
+      background-color: $color-background-body;
+      border-radius: 50%;
+
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      left: 17px;
+      top: 3px;
+
+      display: none;
+
+      width: 22px;
+      height: 22px;
+
+      background-color: $color-input-check-item;
+      border-radius: 50%;
+
+      content: "";
+    }
+  }
+
+  &--sight {
+    position: relative;
+
+    display: block;
+
+    margin: 0;
+    padding-left: 78px;
+    padding-bottom: 23px;
+
+    font-size: 18px;
+    font-weight: 700;
+    color: $color-text-main;
+
+    text-transform: none;
+
+    &::before {
+      position: absolute;
+      left: 0;
+      top: -14px;
+
+      display: block;
+
+      width: 55px;
+      height: 55px;
+
+      background-color: $color-background-body;
+      border-radius: 8px;
+
+      content: "";
+    }
+
+    &::after {
+      position: absolute;
+      left: 18px;
+      top: 6px;
+
+      display: none;
+
+      width: 21px;
+      height: 11px;
+
+      border: 3px solid $color-input-check-item;
+      border-top-style: none;
+      border-right-style: none;
+      transform: rotate(-42deg);
+
+      content: "";
+    }
+  }
+}
+
+.feedback-form__radio:checked ~ .feedback-form__label::after {
+  display: block;
+}
+
+.feedback-form__checkbox:checked ~ .feedback-form__label::after {
+  display: block;
 }
 
 .feedback-form__input,
 .feedback-form__textarea {
-  margin: 0 auto;
-  padding: 15px 10px;
+  width: 100%;
+  margin: 0;
+  padding: 15px 10px 17px 23px;
 
   @include font-main($font-size: 18px);
 
@@ -66,13 +214,18 @@
   text-transform: none;
 }
 
+.feedback-form__radio,
+.feedback-form__checkbox {
+  display: none;
+}
+
 .feedback-form__textarea {
-  width: 280px;
+  width: 100%;
   height: 160px;
 }
 
 .feedback-form__button {
-  margin: 18px auto 42px auto;
+  margin: 18px 0 37px 0;
 }
 
 .feedback-form__note {
