@@ -258,6 +258,24 @@
   display: none;
 }
 
+.feedback-form__modal {
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+
+  width: 320px;
+  margin: 0 auto;
+
+  &--success {
+    display: none;
+  }
+
+  &--fail {
+    display: none;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .feedback-form {
     flex-direction: row;
@@ -425,6 +443,20 @@
   .feedback-form__note {
     @include font-secondary;
     display: block;
+  }
+
+  .feedback-form__modal {
+    &--success {
+      top: 10px;
+
+      width: 640px;
+    }
+
+    &--fail {
+      top: 350px;
+
+      width: 400px;
+    }
   }
 }
 

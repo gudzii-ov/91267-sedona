@@ -147,6 +147,28 @@
             <small class="feedback-form__note">* - Обязательные поля</small>
           </div>
         </form>
+        <article class="feedback-form__modal feedback-form__modal--success modal">
+          <h2 class="modal__title">
+            Ваш отзыв отправлен!
+          </h2>
+          <p class="modal__text">
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.
+          </p>
+          <div class="modal__wrapper">
+            <button class="modal__button button" type="button">Закрыть окно</button>
+          </div>
+        </article>
+        <article class="feedback-form__modal feedback-form__modal--fail modal modal--fail">
+          <h2 class="modal__title modal__title--fail">
+            Что-то пошло не так!
+          </h2>
+          <p class="modal__text modal__text--fail">
+            Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+          </p>
+          <div class="modal__wrapper modal__wrapper--fail">
+            <button class="modal__button button" type="button">ОК</button>
+          </div>
+        </article>
       </section>
     </main>
     <footer class="page-footer">
