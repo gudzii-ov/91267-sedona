@@ -83,6 +83,30 @@
 
     background-color: $color-background-main;
 
+    &[href]:hover {
+      color: $color-link-hover;
+
+      background-color: $color-background-main;
+    }
+
+    &[href]:active {
+      color: $color-link-down;
+
+      background-color: $color-background-main;
+    }
+
+    &--active {
+      color: $color-link-active;
+    }
+
+    &--active:hover {
+      color: $color-link-active-hover;
+    }
+
+    &--active:active {
+      color: $color-link-active-down;
+    }
+
     &--last {
       box-shadow: none;
     }

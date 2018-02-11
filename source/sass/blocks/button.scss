@@ -16,7 +16,7 @@
   }
 
   &:active {
-    opacity: 0.2;
+    color: $color-button-text-down;
 
     background-color: $color-background-button-active;
   }

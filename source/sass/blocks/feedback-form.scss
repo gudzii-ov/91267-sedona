@@ -165,6 +165,18 @@
 
       content: "";
     }
+
+    &:hover::before {
+      background-color: $color-background-grey;
+    }
+
+    &:active::before {
+      background-color: $color-background-grey2;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
   }
 
   &--sight {
@@ -215,6 +227,18 @@
 
       content: "";
     }
+
+    &:hover::before {
+      background-color: $color-background-grey;
+    }
+
+    &:active::before {
+      background-color: $color-background-grey2;
+    }
+
+    &:active::after {
+      opacity: 0.3;
+    }
   }
 }
 
@@ -238,6 +262,18 @@
   border: none;
 
   text-transform: none;
+
+  &:hover {
+    background-color: $color-background-grey;
+  }
+
+  &:active,
+  &:focus {
+    background-color: $color-background-main;
+
+    outline: 4px solid $color-border-grey;
+    outline-offset: -4px;
+  }
 }
 
 .feedback-form__radio,
