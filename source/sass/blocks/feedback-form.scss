@@ -240,7 +240,6 @@
 
 @media (min-width: $tablet-width) {
   .feedback-form {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -254,6 +253,8 @@
 
     &--half {
       flex-basis: 324px;
+
+      margin-bottom: 59px;
     }
 
     &--name {
@@ -271,10 +272,15 @@
     margin-bottom: 58px;
 
     font-size: 21px;
-    text-align: left;
+
+    &--name {
+      text-align: left;
+    }
 
     &--impression {
       margin-bottom: 73px;
+
+      text-align: left;
     }
 
     &--sight {
@@ -295,9 +301,9 @@
     }
 
     &--impression {
+      margin-bottom: 33px;
       padding-left: 76px;
       padding-bottom: 0;
-      margin-bottom: 32px;
     }
 
     &--last {
@@ -311,14 +317,14 @@
     }
   }
 
-  .feedback-form__wrapper {
-    flex-grow: 1;
-
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    justify-content: space-between;
-  }
+  // .feedback-form__wrapper {
+  //   flex-grow: 1;
+  //
+  //   display: flex;
+  //   flex-direction: row;
+  //   align-items: baseline;
+  //   justify-content: space-between;
+  // }
 
   .feedback-form__button {
     margin: 0;
