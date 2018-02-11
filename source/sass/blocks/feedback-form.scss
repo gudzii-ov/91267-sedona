@@ -245,11 +245,46 @@
   }
 
   .feedback-form__item {
+    position: relative;
+
     flex-basis: 648px;
     margin: 0;
     padding: 0;
 
     border: none;
+
+    &::before,
+    &::after {
+      position: absolute;
+      top: 12px;
+
+      display: block;
+
+      width: 125px;
+      height: 1px;
+
+      background-color: $color-border-form;
+
+      content: "";
+    }
+
+    &::before {
+      left: 0;
+    }
+
+    &::after {
+      right: 0;
+    }
+
+    &--half::before,
+    &--half::after {
+      display: none;
+    }
+
+    &--sight::before,
+    &--sight::after {
+      top: 25px;
+    }
 
     &--half {
       flex-basis: 324px;
@@ -268,32 +303,8 @@
     }
 
     &--contacts {
-      position: relative;
 
       margin-bottom: 50px;
-    }
-
-    &--contacts::before,
-    &--contacts::after {
-      position: absolute;
-      top: 12px;
-
-      display: block;
-
-      width: 125px;
-      height: 1px;
-
-      background-color: $color-border-form;
-
-      content: "";
-    }
-
-    &--contacts::before {
-      left: 0;
-    }
-
-    &--contacts::after {
-      right: 0;
     }
   }
 
@@ -314,6 +325,10 @@
 
     &--contacts {
       margin-bottom: 24px;
+    }
+
+    &--sight {
+      margin: 0 180px 0 180px;
     }
   }
 
