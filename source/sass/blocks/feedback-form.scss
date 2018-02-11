@@ -266,6 +266,35 @@
     &--impression {
       order: -2;
     }
+
+    &--contacts {
+      position: relative;
+
+      margin-bottom: 50px;
+    }
+
+    &--contacts::before,
+    &--contacts::after {
+      position: absolute;
+      top: 12px;
+
+      display: block;
+
+      width: 125px;
+      height: 1px;
+
+      background-color: $color-border-form;
+
+      content: "";
+    }
+
+    &--contacts::before {
+      left: 0;
+    }
+
+    &--contacts::after {
+      right: 0;
+    }
   }
 
   .feedback-form__legend {
@@ -283,22 +312,19 @@
       text-align: left;
     }
 
-    &--sight {
-      // margin-bottom: 31px;
+    &--contacts {
+      margin-bottom: 24px;
     }
+  }
 
-    &--textarea {
-      // margin-bottom: 17px;
+  .feedback-form__labeled-input {
+    &--contacts {
+      margin-bottom: 23px;
     }
   }
 
   .feedback-form__label {
     margin-right: 14px;
-
-    &--contacts {
-      // margin-bottom: 7px;
-      // margin-left: 22px;
-    }
 
     &--impression {
       margin-bottom: 33px;
