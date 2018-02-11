@@ -126,5 +126,9 @@
 
   .page-content__intro {
     margin: 0 380px 50px 380px;
+
+    &--form {
+      margin-bottom: 59px;
+    }
   }
 }

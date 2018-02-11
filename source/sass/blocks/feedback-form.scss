@@ -112,6 +112,8 @@
 .feedback-form__label {
   margin-right: 14px;
 
+  white-space: nowrap;
+
   &--contacts {
     margin-bottom: 7px;
     margin-left: 22px;
@@ -428,14 +430,100 @@
 
 @media (min-width: $desktop-width) {
   .feedback-form {
-    padding: 0 120px;
+    padding: 0 60px;
   }
 
   .feedback-form__item {
     flex-basis: 960px;
 
+    &::before,
+    &::after {
+      width: 280px;
+    }
+
     &--half {
       flex-basis: 480px;
+
+      margin-bottom: 57px;
     }
+
+    &--name {
+      padding-left: 80px;
+    }
+
+    &--impression {
+      padding-left: 4px;
+    }
+
+    &--contacts {
+      margin-bottom: 27px;
+    }
+
+    &--sight {
+      margin-bottom: 17px;
+    }
+  }
+
+  .feedback-form__legend {
+    &--impression {
+      margin-left: 76px;
+    }
+
+    &--contacts {
+      margin-bottom: 74px;
+    }
+
+    &--sight {
+      margin: 0 340px 56px 340px;
+    }
+  }
+
+  .feedback-form__input-wrapper {
+    &--contacts {
+      flex-direction: row;
+    }
+
+    &--sight {
+      justify-content: space-between;
+    }
+  }
+
+  .feedback-form__labeled-input {
+    &--contacts {
+      flex-basis: 480px;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+
+    &--phone {
+      padding-right: 80px;
+    }
+
+    &--sight {
+      min-width: 0;
+      padding: 0;
+    }
+
+    &--sight:nth-child(2n) {
+      padding-left: 0;
+    }
+  }
+
+  .feedback-form__label {
+    &--contacts {
+      margin-left: 0;
+    }
+  }
+
+  .feedback-form__hide {
+    display: none;
+  }
+
+  .feedback-form__button {
+    width: 480px;
+  }
+
+  .feedback-form__wrapper {
+    margin-bottom: 70px;
   }
 }
