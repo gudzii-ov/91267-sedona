@@ -18,7 +18,7 @@
   background-color: $color-background-main;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 0;
+  background-position: 0 0;
   background-size: cover;
 
   &::after {
@@ -59,7 +59,7 @@
 
 @media (min-width: $tablet-width) {
   .page-header__wrapper {
-    background-position: 50% 100px;
+    background-position: 0 -100px;
 
     &::after {
       left: 0;
