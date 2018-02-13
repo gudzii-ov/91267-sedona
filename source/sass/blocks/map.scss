@@ -1,5 +1,5 @@
 .map {
-  padding: 28px 20px 0 20px;
+  padding: 28px 0 0 0;
 
   background-color: $color-background-main;
 
@@ -16,23 +16,15 @@
 .map__text {
   @include font-secondary;
 
-  margin: 0;
-  margin-bottom: 35px;
+  margin: 0 20px 35px 20px;
 }
 
 .map__button {
-  width: 100%;
-  margin-bottom: 49px;
+  width: 280px;
+  margin: 0 auto 49px auto;
 }
 
 .map__map {
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-
-  width: 100vw;
   height: 350px;
 
   background-color: $color-background-map;
@@ -47,7 +39,7 @@
 
 @media (min-width: $tablet-width) {
   .map {
-    padding: 28px 155px 0 155px;
+    padding: 28px 0 0 0;
   }
 
   .map__title {
@@ -58,21 +50,18 @@
   }
 
   .map__text {
-    margin-bottom: 42px;
+    margin: 0 155px 42px 155px;
   }
 
   .map__button {
+    width: 455px;
     margin-bottom: 58px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .map {
-    padding: 28px 371px 0 371px;
-  }
-
   .map__text {
-    margin-bottom: 47px;
+    margin: 0 371px 47px 371px;
   }
 
   .map__button {
