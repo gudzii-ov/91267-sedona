@@ -24,3 +24,14 @@
 
   list-style: none;
 }
+
+@mixin page-shadow {
+  box-shadow:
+    0 0 15px 0 $color-shadow-page,
+    0 0 15px 0 $color-shadow-page;
+}
+
+@mixin outline {
+  outline: 2px solid red;
+  outline-offset: -2px;
+}

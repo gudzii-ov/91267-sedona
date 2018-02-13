@@ -1,0 +1,21 @@
+.shader {
+  @include outline;
+
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .shader {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .shader {
+    @include page-shadow;
+
+    width: 1200px;
+  }
+}
