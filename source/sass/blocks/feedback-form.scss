@@ -29,7 +29,8 @@
 }
 
 .feedback-form__fieldset {
-  flex-basis: 320px;
+  flex-basis: auto;
+  width: 320px;
   margin: 0;
   padding: 0 0 3px 0;
 
@@ -321,7 +322,8 @@
   .feedback-form__item {
     position: relative;
 
-    flex-basis: 648px;
+    flex-basis: auto;
+    width: 648px;
 
     margin: 0;
     padding: 0;
@@ -362,7 +364,7 @@
     }
 
     &--half {
-      flex-basis: 324px;
+      width: 324px;
 
       margin-bottom: 59px;
     }
@@ -506,7 +508,7 @@
   }
 
   .feedback-form__item {
-    flex-basis: 960px;
+    width: 960px;
 
     &::before,
     &::after {
@@ -514,7 +516,7 @@
     }
 
     &--half {
-      flex-basis: 480px;
+      width: 480px;
 
       margin-bottom: 57px;
     }
@@ -566,7 +568,8 @@
 
   .feedback-form__labeled-input {
     &--contacts {
-      flex-basis: 480px;
+      flex-basis: auto;
+      width: 480px;
       flex-direction: row;
       justify-content: flex-start;
     }

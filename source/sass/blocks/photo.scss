@@ -59,7 +59,8 @@
   }
 
   .photo__item {
-    flex-basis: 324px;
+    flex-basis: auto;
+    width: 324px;
 
     display: flex;
     flex-direction: row;
@@ -70,7 +71,7 @@
     border: none;
 
     &--best {
-      flex-basis: 768px;
+      width: 768px;
     }
   }
 
@@ -83,10 +84,11 @@
   }
 
   .photo__link {
-    flex-basis: 324px;
+    flex-basis: auto;
+    width: 324px;
 
     &--best {
-      flex-basis: 768px;
+      width: 768px;
     }
   }
 
@@ -103,7 +105,8 @@
   }
 
   .photo__info {
-    flex-basis: 324px;
+    flex-basis: auto;
+    width: 324px;
 
     display: flex;
     flex-direction: row;
@@ -116,19 +119,20 @@
     background-color: $color-background-body;
 
     &--best {
-      flex-basis: 768px;
+      width: 768px;
 
       padding: 0 20px;
     }
   }
 
   .photo__info-wrapper {
-    flex-basis: 220px;
+    flex-basis: auto;
+    width: 220px;
     display: flex;
     flex-direction: column;
 
     &--best {
-      flex-basis: 544px;
+      width: 544px;
     }
   }
 
@@ -154,22 +158,20 @@
   .photo__item {
     position: relative;
 
-    flex-basis: 400px;
+    width: 400px;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
     &--best {
-      flex-basis: 1200px;
+      width: 1200px;
     }
   }
 
   .photo__image {
     width: 400px;
     height: 267px;
-
-    max-width: 100%;
 
     &--best {
       width: 1200px;
@@ -180,6 +182,7 @@
   .photo__info {
     position: absolute;
     bottom: 0;
+    left: 0;
 
     width: 400px;
 
@@ -199,10 +202,10 @@
   }
 
   .photo__info-wrapper {
-    flex-basis: 295px;
+    width: 295px;
 
     &--best {
-      flex-basis: 1095px;
+      width: 1095px;
     }
   }
 
