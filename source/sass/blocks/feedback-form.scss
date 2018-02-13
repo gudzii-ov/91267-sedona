@@ -392,6 +392,10 @@
     }
   }
 
+  .feedback-form__fieldset {
+    width: 100%;
+  }
+
   .feedback-form__legend {
     margin-bottom: 58px;
 
@@ -408,11 +412,11 @@
     }
 
     &--contacts {
-      margin-bottom: 24px;
+      margin: 0 auto 24px auto;
     }
 
     &--sight {
-      margin: 0 180px 56px 180px;
+      margin: 0 auto 56px auto;
     }
 
     &--textarea {
@@ -548,7 +552,7 @@
     }
 
     &--sight {
-      margin: 0 340px 56px 340px;
+      margin-bottom: 0 440px 56px 440px;
     }
 
     &--textarea {
