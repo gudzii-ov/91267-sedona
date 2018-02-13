@@ -65,12 +65,13 @@
   }
 
   .nav-list__item {
-    flex-basis: 153px;
+    flex-basis: auto;
+    width: 153px;
 
     background-color: $color-background-main;
 
     &--logo {
-      flex-basis: 156px;
+      width: 156px;
 
       order: 0;
       background-color: transparent;
@@ -115,12 +116,12 @@
 
 @media (min-width: $desktop-width) {
   .nav-list__item {
-    flex-basis: 239px;
+    width: 239px;
 
     background-color: $color-background-main;
 
     &--logo {
-      flex-basis: 244px;
+      width: 244px;
     }
   }
 }

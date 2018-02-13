@@ -36,7 +36,8 @@
   }
 
   .page-footer__item {
-    flex-basis: 256px;
+    flex-basis: auto;
+    width: 256px;
 
     display: flex;
     flex-direction: row;
