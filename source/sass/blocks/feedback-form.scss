@@ -6,8 +6,10 @@
 }
 
 .feedback-form__item {
-  margin: 0 -20px 22px -20px;
-  padding: 18px 20px 0 20px;
+  margin: 0 -20px;
+  margin-bottom: 22px;
+  padding: 0 20px;
+  padding-top: 18px;
 
   border-top: 1px solid $color-border-grey;
 
@@ -32,7 +34,8 @@
   flex-basis: auto;
   width: 280px;
   margin: 0;
-  padding: 0 0 3px 0;
+  padding: 0;
+  padding-bottom: 3px;
 
   border: none;
 }
@@ -43,7 +46,8 @@
 }
 
 .feedback-form__legend {
-  margin: 0;
+  width: 100%;
+  margin: 0 auto;
   margin-bottom: 21px;
   padding: 0;
 
@@ -275,6 +279,25 @@
     outline: 4px solid $color-border-grey;
     outline-offset: -4px;
   }
+
+  &--phone,
+  &--email {
+    position: relative;
+
+    padding-right: 58px;
+
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: right 20px center;
+  }
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+  }
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+  }
 }
 
 .feedback-form__radio,
@@ -416,11 +439,12 @@
     }
 
     &--sight {
+      width: 280px;
       margin: 0 auto 56px auto;
     }
 
     &--textarea {
-      margin: 0 180px 58px 180px;
+      margin: 0 auto 58px auto;
     }
   }
 
@@ -552,11 +576,11 @@
     }
 
     &--sight {
-      margin-bottom: 0 440px 56px 440px;
+      margin-bottom: 56px;
     }
 
     &--textarea {
-      margin: 0 340px 56px 340px;
+      margin-bottom: 56px;
     }
   }
 
