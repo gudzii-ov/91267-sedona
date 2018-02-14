@@ -1,22 +1,14 @@
 .nav-list {
+  @include list-reset;
+
   display: flex;
   flex-direction: column;
-
-  margin: 0;
-  padding: 0;
-
-  list-style: none;
-
-  outline: 1px dashed black;
-  outline-offset: -1px;
 }
 
 .nav-list__item {
   text-align: center;
 
   &--logo {
-    position: relative;
-
     order: 2;
 
     height: 56px;
@@ -26,18 +18,33 @@
 }
 
 .nav-list__link {
+  @include font-main($font-size: 18px, $line-height: 56px, $color-text: $color-text-reverted);
+
   height: 56px;
   display: block;
-
-  @include font-main($font-size: 18px, $line-height: 56px, $color-text: $color-text-reverted);
 
   text-decoration: none;
 
   background-color: $color-background-button;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2); //заменить на тень
+  box-shadow:
+    0 -1px 0 0 $color-shadow-main,
+    inset 0 1px 0 0 $color-shadow-inner;
+
+  &[href]:hover {
+    background-color: $color-background-button-hover;
+  }
+
+  &[href]:active {
+    opacity: 0.2;
+
+    background-color: $color-background-button-active;
+  }
 
   &--last {
-    // сделать правильную тень
+    box-shadow:
+      0 -1px 0 0 $color-shadow-main,
+      inset 0 1px 0 0 $color-shadow-inner,
+      inset 0 -7px 14px -7px $color-shadow-gradient;
   }
 
   &--logo {
@@ -47,38 +54,74 @@
     line-height: 0;
 
     background-color: transparent;
-    border-bottom: none;
+    box-shadow: none;
   }
-}
-
-.nav-list__toggler {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-
-  display: block;
-  width: 23px;
-  height: 22px;
-
-  font-size: 0;
 }
 
 @media (min-width: $tablet-width) {
   .nav-list {
     flex-direction: row;
+    justify-content: space-between;
   }
 
   .nav-list__item {
+    flex-basis: auto;
+    width: 153px;
+
+    background-color: $color-background-main;
+
     &--logo {
+      width: 156px;
+
       order: 0;
+      background-color: transparent;
     }
   }
 
   .nav-list__link {
-    background-color: none;
-  }
+    font-size: 14px;
+    color: $color-text-main;
 
-  .nav-list__toggler {
-    display: none;
+    background-color: $color-background-main;
+
+    &[href]:hover {
+      color: $color-link-hover;
+
+      background-color: $color-background-main;
+    }
+
+    &[href]:active {
+      color: $color-link-down;
+
+      background-color: $color-background-main;
+    }
+
+    &--active {
+      color: $color-link-active;
+    }
+
+    &--active:hover {
+      color: $color-link-active-hover;
+    }
+
+    &--active:active {
+      color: $color-link-active-down;
+    }
+
+    &--last {
+      box-shadow: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav-list__item {
+    width: 239px;
+
+    background-color: $color-background-main;
+
+    &--logo {
+      width: 244px;
+    }
   }
 }

@@ -1,19 +1,50 @@
 /* Размеры экрана */
 $tablet-width: 768px;
 $desktop-width: 1280px;
+$mobile-width-only: 767px;
 
 /* Шрифт по-умолчанию */
 $default-font-family: "PT Sans", "Helvetica", sans-serif;
 
 /* Цвета */
-$color-text-main:               #000000;
-$color-text-reverted:           #ffffff;
-$color-text-secondary:          #333333;
-$color-background-main:         #ffffff;
-$color-background-button:       #81b3d2;
-$color-background-footer:       #fefefe;
-$color-background-map:          #f3f1ed;
-$color-background-photo:        #776a0a;
-$color-background-index-photo:  #fdfffe;
-$color-background-reasons:      #eeeeee;
-$color-background-body:        #f2f2f2;
+$color-text-main:                  #000000;
+$color-text-reverted:              #ffffff;
+$color-text-secondary:             #333333;
+$color-button-text-down:           rgba(255, 255, 255, 0.3);
+
+$color-link-hover:                 #81b3d2;
+$color-link-down:                  rgba(0, 0, 0, 0.3);
+$color-link-active:                rgb(118, 99, 87);
+$color-link-active-hover:          rgb(96, 78, 67);
+$color-link-active-down:           rgba(118, 99, 87, 0.3);
+
+$color-background-main:            #ffffff;
+$color-background-body:            #f2f2f2;
+$color-background-grey:            #e5e5e5;
+$color-background-grey2:           #d5d5d5;
+$color-background-grey3:           #e6e6e6;
+$color-background-footer:          #fefefe;
+$color-background-map:             #f3f1ed;
+$color-background-photo:           #776a0a;
+$color-background-index-photo:     #fdfffe;
+$color-background-reasons:         #eeeeee;
+$color-background-info:            #eaeaea;
+$color-background-black-60:        rgba(0, 0, 0, 0.6);
+$color-background-button:          #81b3d2;
+$color-background-button-hover:    #669ec0;
+$color-background-button-active:   #5496bd;
+$color-input-check-item:           #333333;
+
+$color-border-grey:                #e5e5e5;
+$color-border-form:                #dbdbdb;
+
+$color-shadow-main:                rgba(1, 1, 1, 0.2);
+$color-shadow-inner:               rgba(255, 255, 255, 0.2);
+$color-shadow-gradient:            rgba(0, 0, 0, 0.2);
+$color-shadow-page:                rgba(0, 1, 1, 0.2);
+$color-shadow-page2:                rgba(0, 1, 1, 0.15);
+
+$color-video-control-upper:        rgba(0, 0, 0, 0.6);
+$color-video-control-lower:        #f2f2f2;
+$color-video-control-seek-bar:     rgba(255, 255, 255, 0.2);
+$color-video-control-seek-button:  #ffffff;

@@ -1,36 +1,70 @@
 .map {
-  padding-top: 27px;
+  padding: 28px 0 0 0;
 
   background-color: $color-background-main;
 
   text-align: center;
-
-  outline: 1px solid blue;
-  outline-offset: -1px;
 }
 
 .map__title {
   display: inline-block;
-  margin-bottom: 5px;
+  margin-bottom: 19px;
 
   @include font-main;
 }
 
 .map__text {
   @include font-secondary;
+
+  margin: 0 20px 35px 20px;
 }
 
 .map__button {
-  margin-top: 36px;
-  margin-bottom: 49px;
+  width: 280px;
+  margin: 0 auto 49px auto;
 }
 
 .map__map {
-  margin: 0 -20px;
-
-  max-width: 100%;
-  height: auto;
+  height: 350px;
 
   background-color: $color-background-map;
   background-image: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.map__map iframe {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .map {
+    padding: 28px 0 0 0;
+  }
+
+  .map__title {
+    margin-top: 28px;
+    margin-bottom: 30px;
+
+    font-size: 30px;
+  }
+
+  .map__text {
+    margin: 0 155px 42px 155px;
+  }
+
+  .map__button {
+    width: 455px;
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .map__text {
+    margin: 0 371px 47px 371px;
+  }
+
+  .map__button {
+    margin-bottom: 65px;
+  }
 }

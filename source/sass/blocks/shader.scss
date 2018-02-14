@@ -1,0 +1,21 @@
+.shader {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .shader {
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .shader {
+    width: 1200px;
+
+    box-shadow:
+      0 0 15px 0 $color-shadow-page,
+      0 0 15px 0 $color-shadow-page;
+  }
+}
