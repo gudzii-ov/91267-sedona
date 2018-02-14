@@ -3,9 +3,9 @@
 
   text-align: center;
 
-  background-color: $color-background-main;
+  background-color: $color-white;
 
-  box-shadow: 0 7px 15px 0 $color-shadow-page2;
+  box-shadow: 0 7px 15px 0 $color-lighter-black-15;
 }
 
 .modal__title {
@@ -25,10 +25,10 @@
   margin: 0 -20px;
   padding: 20px 0;
 
-  background-color: $color-background-body;
+  background-color: $color-grey-f2;
 
   &--fail {
-    background-color: $color-background-main;
+    background-color: $color-white;
   }
 }
 

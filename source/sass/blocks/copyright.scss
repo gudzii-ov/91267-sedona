@@ -1,5 +1,5 @@
 .copyright__text {
-  @include font-secondary($line-height: 26px, $color-text: $color-text-main);
+  @include font-secondary($line-height: 26px, $color-text: $color-black);
 }
 
 .copyright__link {
@@ -17,14 +17,14 @@
   height: 34px;
 
   & path {
-    fill: $color-text-main;
+    fill: $color-black;
   }
 
   &:hover path {
-    fill: $color-link-hover;
+    fill: $color-lightblue;
   }
 
   &:active path {
-    fill: $color-link-down;
+    fill: $color-black-30;
   }
 }

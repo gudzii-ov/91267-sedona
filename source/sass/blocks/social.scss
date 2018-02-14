@@ -11,22 +11,22 @@
 
   font-size: 0;
 
-  background-color: $color-background-button;
+  background-color: $color-lightblue;
 
   &:hover {
-    background-color: $color-background-button-hover;
+    background-color: $color-lighterblue;
   }
 
   &:hover path {
-    fill: $color-text-reverted;
+    fill: $color-white;
   }
 
   &:active {
-    background-color: $color-background-button-active;
+    background-color: $color-blue;
   }
 
   &:active path {
-    fill: $color-button-text-down;
+    fill: $color-white-30;
   }
 }
 

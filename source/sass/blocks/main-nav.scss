@@ -1,7 +1,7 @@
 .main-nav {
   position: relative;
 
-  background-color: $color-background-button;
+  background-color: $color-lightblue;
 
   z-index: 2;
 }
@@ -47,7 +47,7 @@
 
 @media (min-width: $tablet-width) {
   .main-nav {
-    background-color: $color-background-main;
+    background-color: $color-white;
   }
 
   .main-nav__toggler {

@@ -9,46 +9,37 @@ $retina-dppx: 1.5dppx;
 $default-font-family: "PT Sans", "Helvetica", sans-serif;
 
 /* Цвета */
-$color-text-main:                  #000000;
-$color-text-reverted:              #ffffff;
-$color-text-secondary:             #333333;
-$color-button-text-down:           rgba(255, 255, 255, 0.3);
-$color-controls-down:              rgba(51, 51, 51, 0.3);
+$color-black:             #000000;
+$color-lighter-black:     #333333;
+$color-black-20:          rgba(0, 0, 0, 0.2);
+$color-black-30:          rgba(0, 0, 0, 0.3);
+$color-black-60:          rgba(0, 0, 0, 0.6);
+$color-light-black-20:    rgba(1, 1, 1, 0.2);
+$color-lighter-black-20:  rgba(0, 1, 1, 0.2);
+$color-lighter-black-15:  rgba(0, 1, 1, 0.15);
 
-$color-link-hover:                 #81b3d2;
-$color-link-down:                  rgba(0, 0, 0, 0.3);
-$color-link-active:                rgb(118, 99, 87);
-$color-link-active-hover:          rgb(96, 78, 67);
-$color-link-active-down:           rgba(118, 99, 87, 0.3);
+$color-white:             #ffffff;
+$color-darker-white:      #f3f1ed;
+$color-white-20:          rgba(255, 255, 255, 0.2);
+$color-white-30:          rgba(255, 255, 255, 0.3);
+$color-light51-30:        rgba(51, 51, 51, 0.3);
 
-$color-background-main:            #ffffff;
-$color-background-body:            #f2f2f2;
-$color-background-grey:            #e5e5e5;
-$color-background-grey2:           #d5d5d5;
-$color-background-grey3:           #e6e6e6;
-$color-background-grey4:           #5c6870;
-$color-background-footer:          #fefefe;
-$color-background-map:             #f3f1ed;
-$color-background-photo:           #776a0a;
-$color-background-index-photo:     #fdfffe;
-$color-background-reasons:         #eeeeee;
-$color-background-info:            #eaeaea;
-$color-background-black-60:        rgba(0, 0, 0, 0.6);
-$color-background-button:          #81b3d2;
-$color-background-button-hover:    #669ec0;
-$color-background-button-active:   #5496bd;
-$color-input-check-item:           #333333;
+$color-darkgrey:          #5c6870;
+$color-grey-d5:           #d5d5d5;
+$color-grey-db:           #dbdbdb;
+$color-grey-e5:           #e5e5e5;
+$color-grey-e6:           #e6e6e6;
+$color-grey-ea:           #eaeaea;
+$color-grey-ee:           #eeeeee;
+$color-grey-f2:           #f2f2f2;
+$color-grey-fe:           #fefefe;
+$color-grey-fdfffe:       #fdfffe;
 
-$color-border-grey:                #e5e5e5;
-$color-border-form:                #dbdbdb;
+$color-blue:              #5496bd;
+$color-lighterblue:       #669ec0;
+$color-lightblue:         #81b3d2;
 
-$color-shadow-main:                rgba(1, 1, 1, 0.2);
-$color-shadow-inner:               rgba(255, 255, 255, 0.2);
-$color-shadow-gradient:            rgba(0, 0, 0, 0.2);
-$color-shadow-page:                rgba(0, 1, 1, 0.2);
-$color-shadow-page2:                rgba(0, 1, 1, 0.15);
-
-$color-video-control-upper:        rgba(0, 0, 0, 0.6);
-$color-video-control-lower:        #f2f2f2;
-$color-video-control-seek-bar:     rgba(255, 255, 255, 0.2);
-$color-video-control-seek-button:  #ffffff;
+$color-lighterbrown:      #776a0a;
+$color-lightbrown:        rgb(118, 99, 87);
+$color-brown:             rgb(96, 78, 67);
+$color-lightbrown-30:     rgba(118, 99, 87, 0.3);

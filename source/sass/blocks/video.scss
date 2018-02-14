@@ -4,9 +4,9 @@
 
   text-align: center;
 
-  background-color: $color-background-main;
+  background-color: $color-white;
 
-  border-top: 1px solid $color-background-grey;
+  border-top: 1px solid $color-grey-e5;
 }
 
 .video__promo {
@@ -46,7 +46,7 @@
   height: 45px;
   padding: 0;
 
-  background-color: $color-video-control-upper;
+  background-color: $color-black-60;
 }
 
 .video__seek-bar {
@@ -56,7 +56,7 @@
   height: 3px;
   margin: 0 auto;
 
-  background-color: $color-video-control-seek-bar;
+  background-color: $color-white-20;
 
   &::before {
     position: relative;
@@ -69,7 +69,7 @@
     height: 9px;
 
     border-radius: 50%;
-    background-color: $color-video-control-seek-button;
+    background-color: $color-white;
 
     content: "";
   }
@@ -83,21 +83,21 @@
   font-size: 0;
 
   border: none;
-  background-color: $color-video-control-lower;
+  background-color: $color-grey-f2;
 
   & path,
   & polygon {
-    fill: $color-background-grey4;
+    fill: $color-darkgrey;
   }
 
   &:hover path,
   &:hover polygon {
-    fill: $color-text-secondary;
+    fill: $color-lighter-black;
   }
 
   &:active path,
   &:active polygon {
-    fill: $color-controls-down;
+    fill: $color-light51-30;
   }
 }
 
@@ -143,7 +143,7 @@
   height: 66px;
   padding: 0 25px;
 
-  background-color: $color-video-control-lower;
+  background-color: $color-grey-f2;
 }
 
 .video__player {
@@ -218,7 +218,7 @@
     height: 93px;
     padding: 0 41px 0 35px;
 
-    background-color: $color-video-control-upper;
+    background-color: $color-black-60;
   }
 
   .video__control-button {
@@ -226,7 +226,7 @@
 
     & path,
     & polygon {
-      fill: $color-text-reverted;
+      fill: $color-white;
     }
   }
 

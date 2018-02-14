@@ -4,13 +4,13 @@
 
   padding: 0;
 
-  background-color: $color-background-main;
+  background-color: $color-white;
 }
 
 .photo__item {
   padding: 22px 20px 17px 20px;
 
-  border-top: 1px solid $color-background-grey;
+  border-top: 1px solid $color-grey-e5;
 }
 
 .photo__image {
@@ -19,7 +19,7 @@
   max-width: 100%;
   height: auto;
 
-  background-color: $color-background-photo;
+  background-color: $color-lighterbrown;
 }
 
 .photo__title {
@@ -55,7 +55,7 @@
 }
 
 .photo__svg path {
-  fill: $color-link-down;
+  fill: $color-black-30;
 }
 
 @media (min-width: $tablet-width) {
@@ -85,10 +85,10 @@
   }
 
   .photo__item:nth-child(2n) .photo__info {
-    background-color: $color-background-info;
+    background-color: $color-grey-ea;
 
     &--best {
-      background-color: $color-background-body;
+      background-color: $color-grey-f2;
     }
   }
 
@@ -121,7 +121,7 @@
     height: 80px;
     padding: 0 30px 0 20px;
 
-    background-color: $color-background-body;
+    background-color: $color-grey-f2;
 
     &--best {
       width: 648px;
@@ -175,7 +175,7 @@
   }
 
   .photo__svg path {
-    fill: $color-text-reverted;
+    fill: $color-white;
   }
 
   .photo__image {
@@ -193,7 +193,7 @@
 
     width: 400px;
 
-    background-color: $color-background-black-60;
+    background-color: $color-black-60;
 
     &--best {
       width: 1200px;
@@ -201,10 +201,10 @@
   }
 
   .photo__item:nth-child(2n) .photo__info {
-    background-color: $color-background-black-60;
+    background-color: $color-black-60;
 
     &--best {
-      background-color: $color-background-black-60;
+      background-color: $color-black-60;
     }
   }
 
@@ -219,6 +219,6 @@
   .photo__title,
   .photo__author,
   .photo__like {
-    color: $color-text-reverted;
+    color: $color-white;
   }
 }

@@ -13,38 +13,38 @@
 
     height: 56px;
 
-    background-color: $color-background-main;
+    background-color: $color-white;
   }
 }
 
 .nav-list__link {
-  @include font-main($font-size: 18px, $line-height: 56px, $color-text: $color-text-reverted);
+  @include font-main($font-size: 18px, $line-height: 56px, $color-text: $color-white);
 
   height: 56px;
   display: block;
 
   text-decoration: none;
 
-  background-color: $color-background-button;
+  background-color: $color-lightblue;
   box-shadow:
-    0 -1px 0 0 $color-shadow-main,
-    inset 0 1px 0 0 $color-shadow-inner;
+    0 -1px 0 0 $color-light-black-20,
+    inset 0 1px 0 0 $color-white-20;
 
   &[href]:hover {
-    background-color: $color-background-button-hover;
+    background-color: $color-lighterblue;
   }
 
   &[href]:active {
     opacity: 0.2;
 
-    background-color: $color-background-button-active;
+    background-color: $color-blue;
   }
 
   &--last {
     box-shadow:
-      0 -1px 0 0 $color-shadow-main,
-      inset 0 1px 0 0 $color-shadow-inner,
-      inset 0 -7px 14px -7px $color-shadow-gradient;
+      0 -1px 0 0 $color-light-black-20,
+      inset 0 1px 0 0 $color-white-20,
+      inset 0 -7px 14px -7px $color-black-20;
   }
 
   &--logo {
@@ -68,7 +68,7 @@
     flex-basis: auto;
     width: 153px;
 
-    background-color: $color-background-main;
+    background-color: $color-white;
 
     &--logo {
       width: 156px;
@@ -80,32 +80,32 @@
 
   .nav-list__link {
     font-size: 14px;
-    color: $color-text-main;
+    color: $color-black;
 
-    background-color: $color-background-main;
+    background-color: $color-white;
 
     &[href]:hover {
-      color: $color-link-hover;
+      color: $color-lightblue;
 
-      background-color: $color-background-main;
+      background-color: $color-white;
     }
 
     &[href]:active {
-      color: $color-link-down;
+      color: $color-black-30;
 
-      background-color: $color-background-main;
+      background-color: $color-white;
     }
 
     &--active {
-      color: $color-link-active;
+      color: $color-lightbrown;
     }
 
     &--active:hover {
-      color: $color-link-active-hover;
+      color: $color-brown;
     }
 
     &--active:active {
-      color: $color-link-active-down;
+      color: $color-lightbrown-30;
     }
 
     &--last {
@@ -118,7 +118,7 @@
   .nav-list__item {
     width: 239px;
 
-    background-color: $color-background-main;
+    background-color: $color-white;
 
     &--logo {
       width: 244px;
