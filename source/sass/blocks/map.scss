@@ -32,9 +32,9 @@
   background-repeat: no-repeat;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/bg-map-mobile@2x.jpg");
-      background-size: 640px auto;
-    }
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 640px auto;
+  }
 }
 
 .map__map iframe {
@@ -61,9 +61,9 @@
     background-image: url("../img/bg-map-tablet@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/bg-map-tablet@2x.jpg");
-        background-size: 1536px auto;
-      }
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 1536px auto;
+    }
   }
 
   .map__button {
@@ -81,9 +81,9 @@
     background-image: url("../img/bg-map-desktop@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/bg-map-desktop@2x.jpg");
-        background-size: 2400px auto;
-      }
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 2400px auto;
+    }
   }
 
   .map__button {
