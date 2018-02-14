@@ -38,19 +38,24 @@
 }
 
 .photo__like {
+  position: relative;
+
   display: inline-block;
 
   margin: 0;
-  // padding-left: 37px;
+  padding-left: 37px;
 
   @include font-main($font-size: 14px, $line-height: 24px);
+}
 
-  // background-image: url("../img/icon-like.svg");
-  // background-repeat: no-repeat;
+.photo__svg {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .photo__svg path {
-  fill: $color-text-reverted;
+  fill: $color-link-down;
 }
 
 @media (min-width: $tablet-width) {
@@ -145,7 +150,7 @@
   }
 
   .photo__like {
-    // padding-left: 32px;
+    padding-left: 32px;
   }
 }
 
@@ -167,6 +172,10 @@
     &--best {
       width: 1200px;
     }
+  }
+
+  .photo__svg path {
+    fill: $color-text-reverted;
   }
 
   .photo__image {
