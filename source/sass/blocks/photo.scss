@@ -41,12 +41,16 @@
   display: inline-block;
 
   margin: 0;
-  padding-left: 37px;
+  // padding-left: 37px;
 
   @include font-main($font-size: 14px, $line-height: 24px);
 
-  background-image: url("../img/icon-like.svg");
-  background-repeat: no-repeat;
+  // background-image: url("../img/icon-like.svg");
+  // background-repeat: no-repeat;
+}
+
+.photo__svg path {
+  fill: $color-text-reverted;
 }
 
 @media (min-width: $tablet-width) {
@@ -90,13 +94,13 @@
 
   .photo__image {
     width: 324px;
-    height: auto;
+    height: 267px;
 
     max-width: 100%;
 
     &--best {
       width: 648px;
-      height: auto;
+      height: 400px;
     }
   }
 
@@ -141,7 +145,7 @@
   }
 
   .photo__like {
-    padding-left: 32px;
+    // padding-left: 32px;
   }
 }
 
@@ -167,11 +171,9 @@
 
   .photo__image {
     width: 400px;
-    height: auto;
 
     &--best {
       width: 1200px;
-      height: auto;
     }
   }
 
