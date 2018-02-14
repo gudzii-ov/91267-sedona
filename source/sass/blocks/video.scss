@@ -78,33 +78,61 @@
 .video__control-button {
   display: block;
 
+  padding: 0;
+
   font-size: 0;
 
   border: none;
   background-color: $color-video-control-lower;
+
+  & path,
+  & polygon {
+    fill: $color-background-grey4;
+  }
+
+  &:hover path,
+  &:hover polygon {
+    fill: $color-text-secondary;
+  }
+
+  &:active path,
+  &:active polygon {
+    fill: $color-controls-down;
+  }
 }
 
 .video__control-button--replay {
   width: 16px;
   height: 20px;
-
-  background-image: url("../img/icon-video-replay.svg");
 }
 
 .video__control-button--subtitles {
   width: 32px;
   height: 20px;
   margin-left: auto;
-
-  background-image: url("../img/icon-video-subtitles.svg");
 }
 
 .video__control-button--fullscreen {
   width: 20px;
   height: 20px;
   margin-left: 30px;
+}
 
-  background-image: url("../img/icon-video-fullscreen.svg");
+.video__svg {
+  &--replay {
+    width: 16px;
+    height: 20px;
+  }
+
+  &--subtitles {
+    width: 32px;
+    height: 20px;
+  }
+
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .video__wrapper-down {
@@ -195,6 +223,11 @@
 
   .video__control-button {
     background-color: transparent;
+
+    & path,
+    & polygon {
+      fill: $color-text-reverted;
+    }
   }
 
   .video__control-button--fullscreen {

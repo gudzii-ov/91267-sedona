@@ -5,16 +5,26 @@
 .copyright__link {
   display: inline-block;
 
-  width: 27px;
-  height: 34px;
   margin-left: 9px;
 
   font-size: 0;
 
   vertical-align: middle;
+}
 
-  background-color: transparent;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.copyright__htmlacademy {
+  width: 27px;
+  height: 34px;
+
+  & path {
+    fill: $color-text-main;
+  }
+
+  &:hover path {
+    fill: $color-link-hover;
+  }
+
+  &:active path {
+    fill: $color-link-down;
+  }
 }
