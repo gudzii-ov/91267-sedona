@@ -85,22 +85,18 @@
 
   .photo__link {
     flex-basis: auto;
-    width: 324px;
-
-    &--best {
-      width: 768px;
-    }
+    width: 100%;
   }
 
   .photo__image {
     width: 324px;
-    height: 267px;
+    height: auto;
 
     max-width: 100%;
 
     &--best {
       width: 648px;
-      height: 400px;
+      height: auto;
     }
   }
 
@@ -171,11 +167,11 @@
 
   .photo__image {
     width: 400px;
-    height: 267px;
+    height: auto;
 
     &--best {
       width: 1200px;
-      height: 400px;
+      height: auto;
     }
   }
 
