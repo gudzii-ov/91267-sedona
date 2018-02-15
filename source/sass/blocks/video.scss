@@ -88,6 +88,21 @@
 
 .video__svg {
   fill: $color-darkgrey;
+
+  &--replay {
+    width: 16px;
+    height: 20px;
+  }
+
+  &--subtitles {
+    width: 32px;
+    height: 20px;
+  }
+
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 .video__control-button:hover .video__svg {
@@ -113,23 +128,6 @@
   width: 20px;
   height: 20px;
   margin-left: 30px;
-}
-
-.video__svg {
-  &--replay {
-    width: 16px;
-    height: 20px;
-  }
-
-  &--subtitles {
-    width: 32px;
-    height: 20px;
-  }
-
-  &--fullscreen {
-    width: 20px;
-    height: 20px;
-  }
 }
 
 .video__wrapper-down {
