@@ -17,16 +17,8 @@
     background-color: $color-lighterblue;
   }
 
-  &:hover path {
-    fill: $color-white;
-  }
-
   &:active {
     background-color: $color-blue;
-  }
-
-  &:active path {
-    fill: $color-white-30;
   }
 }
 
@@ -40,6 +32,12 @@
   display: block;
 
   margin: auto;
+
+  fill: $color-white;
+}
+
+.social__link:active .social__svg {
+  fill: $color-white-30;
 }
 
 .social__svg--twitter {
