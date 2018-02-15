@@ -1,20 +1,30 @@
 .copyright__text {
-  @include font-secondary($line-height: 26px, $color-text: $color-text-main);
+  @include font-secondary($line-height: 26px, $color-text: $color-black);
 }
 
 .copyright__link {
   display: inline-block;
 
-  width: 27px;
-  height: 34px;
   margin-left: 9px;
 
   font-size: 0;
 
   vertical-align: middle;
+}
 
-  background-color: transparent;
-  background-image: url("../img/logo-htmlacademy.svg");
-  background-repeat: no-repeat;
-  background-position: center;
+.copyright__htmlacademy {
+  width: 27px;
+  height: 34px;
+
+  & path {
+    fill: $color-black;
+  }
+
+  &:hover path {
+    fill: $color-lightblue;
+  }
+
+  &:active path {
+    fill: $color-black-30;
+  }
 }

@@ -3,25 +3,25 @@
   padding: 16px 0 16px 0;
   width: 280px;
 
-  @include font-main($color-text: $color-text-reverted);
+  @include font-main($color-text: $color-white);
 
   text-align: center;
   text-decoration: none;
 
-  background-color: $color-background-button;
+  background-color: $color-lightblue;
   border: none;
 
   &:hover {
-    background-color: $color-background-button-hover;
+    background-color: $color-lighterblue;
   }
 
   &:active {
-    color: $color-button-text-down;
+    color: $color-white-30;
 
-    background-color: $color-background-button-active;
+    background-color: $color-blue;
   }
 
   &[disabled] {
-    background-color: $color-background-grey;
+    background-color: $color-grey-e5;
   }
 }

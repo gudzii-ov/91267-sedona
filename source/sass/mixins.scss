@@ -1,4 +1,4 @@
-@mixin font-main($font-size: 21px, $line-height: 26px, $color-text: $color-text-main) {
+@mixin font-main($font-size: 21px, $line-height: 26px, $color-text: $color-black) {
   font-family: $default-font-family;
   font-size: $font-size;
   line-height: $line-height;
@@ -8,7 +8,7 @@
   text-transform: uppercase;
 }
 
-@mixin font-secondary($font-size: 14px, $line-height: 24px, $color-text: $color-text-secondary) {
+@mixin font-secondary($font-size: 14px, $line-height: 24px, $color-text: $color-lighter-black) {
   font-family: $default-font-family;
   font-size: $font-size;
   line-height: $line-height;

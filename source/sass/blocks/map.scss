@@ -1,7 +1,7 @@
 .map {
   padding: 28px 0 0 0;
 
-  background-color: $color-background-main;
+  background-color: $color-white;
 
   text-align: center;
 }
@@ -27,10 +27,14 @@
 .map__map {
   height: 350px;
 
-  background-color: $color-background-map;
+  background-color: $color-darker-white;
   background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+    background-size: 640px auto;
+  }
 }
 
 .map__map iframe {
@@ -53,6 +57,15 @@
     margin: 0 155px 42px 155px;
   }
 
+  .map__map {
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+      background-size: 1536px auto;
+    }
+  }
+
   .map__button {
     width: 455px;
     margin-bottom: 58px;
@@ -62,6 +75,15 @@
 @media (min-width: $desktop-width) {
   .map__text {
     margin: 0 371px 47px 371px;
+  }
+
+  .map__map {
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+      background-size: 2400px auto;
+    }
   }
 
   .map__button {

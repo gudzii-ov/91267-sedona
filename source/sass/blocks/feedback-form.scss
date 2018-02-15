@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
 
-  background-color: $color-background-main;
+  background-color: $color-white;
 }
 
 .feedback-form__item {
@@ -11,7 +11,7 @@
   padding: 0 20px;
   padding-top: 18px;
 
-  border-top: 1px solid $color-border-grey;
+  border-top: 1px solid $color-grey-e5;
 
   &--contacts {
     margin-bottom: 24px;
@@ -135,7 +135,7 @@
 
     font-size: 18px;
     font-weight: 700;
-    color: $color-text-main;
+    color: $color-black;
 
     text-transform: none;
 
@@ -149,7 +149,7 @@
       width: 56px;
       height: 56px;
 
-      background-color: $color-background-body;
+      background-color: $color-grey-f2;
       border-radius: 50%;
 
       content: "";
@@ -165,18 +165,18 @@
       width: 22px;
       height: 22px;
 
-      background-color: $color-input-check-item;
+      background-color: $color-lighter-black;
       border-radius: 50%;
 
       content: "";
     }
 
     &:hover::before {
-      background-color: $color-background-grey;
+      background-color: $color-grey-e5;
     }
 
     &:active::before {
-      background-color: $color-background-grey2;
+      background-color: $color-grey-d5;
     }
 
     &:active::after {
@@ -195,7 +195,7 @@
 
     font-size: 18px;
     font-weight: 700;
-    color: $color-text-main;
+    color: $color-black;
 
     text-transform: none;
 
@@ -209,7 +209,7 @@
       width: 55px;
       height: 55px;
 
-      background-color: $color-background-body;
+      background-color: $color-grey-f2;
       border-radius: 8px;
 
       content: "";
@@ -225,7 +225,7 @@
       width: 21px;
       height: 11px;
 
-      border: 3px solid $color-input-check-item;
+      border: 3px solid $color-lighter-black;
       border-top-style: none;
       border-right-style: none;
       transform: rotate(-42deg);
@@ -234,11 +234,11 @@
     }
 
     &:hover::before {
-      background-color: $color-background-grey;
+      background-color: $color-grey-e5;
     }
 
     &:active::before {
-      background-color: $color-background-grey2;
+      background-color: $color-grey-d5;
     }
 
     &:active::after {
@@ -263,20 +263,20 @@
 
   @include font-main($font-size: 18px);
 
-  background-color: $color-background-body;
+  background-color: $color-grey-f2;
   border: none;
 
   text-transform: none;
 
   &:hover {
-    background-color: $color-background-grey;
+    background-color: $color-grey-e5;
   }
 
   &:active,
   &:focus {
-    background-color: $color-background-main;
+    background-color: $color-white;
 
-    outline: 4px solid $color-border-grey;
+    outline: 4px solid $color-grey-e5;
     outline-offset: -4px;
   }
 
@@ -287,16 +287,27 @@
     padding-right: 58px;
 
     background-repeat: no-repeat;
-    background-size: 18px 18px;
-    background-position: right 20px center;
+    background-position:
+      right 20px center,
+      right center;
   }
 
   &--phone {
-    background-image: url("../img/icon-phone.svg");
+    background-image:
+      url("../img/icon-phone.svg"),
+      linear-gradient(to left, $color-grey-e6 58px, $color-grey-f2 58px);
+    background-size:
+      18px 18px,
+      58px 58px;
   }
 
   &--email {
-    background-image: url("../img/icon-mail.svg");
+    background-image:
+      url("../img/icon-mail.svg"),
+      linear-gradient(to left, $color-grey-e6 58px, $color-grey-f2 58px);
+    background-size:
+      16px 16px,
+      58px 58px;
   }
 }
 
@@ -363,7 +374,7 @@
       width: 125px;
       height: 1px;
 
-      background-color: $color-border-form;
+      background-color: $color-grey-db;
 
       content: "";
     }
@@ -395,7 +406,7 @@
     &--name {
       padding-left: 57px;
 
-      border-left: 1px solid $color-border-form;
+      border-left: 1px solid $color-grey-db;
     }
 
     &--impression {
