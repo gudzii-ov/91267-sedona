@@ -84,21 +84,33 @@
 
   border: none;
   background-color: $color-grey-f2;
+}
 
-  & path,
-  & polygon {
-    fill: $color-darkgrey;
+.video__svg {
+  fill: $color-darkgrey;
+
+  &--replay {
+    width: 16px;
+    height: 20px;
   }
 
-  &:hover path,
-  &:hover polygon {
-    fill: $color-lighter-black;
+  &--subtitles {
+    width: 32px;
+    height: 20px;
   }
 
-  &:active path,
-  &:active polygon {
-    fill: $color-light51-30;
+  &--fullscreen {
+    width: 20px;
+    height: 20px;
   }
+}
+
+.video__control-button:hover .video__svg {
+  fill: $color-lighter-black;
+}
+
+.video__control-button:active .video__svg {
+  fill: $color-light51-30;
 }
 
 .video__control-button--replay {
@@ -116,23 +128,6 @@
   width: 20px;
   height: 20px;
   margin-left: 30px;
-}
-
-.video__svg {
-  &--replay {
-    width: 16px;
-    height: 20px;
-  }
-
-  &--subtitles {
-    width: 32px;
-    height: 20px;
-  }
-
-  &--fullscreen {
-    width: 20px;
-    height: 20px;
-  }
 }
 
 .video__wrapper-down {
@@ -223,11 +218,10 @@
 
   .video__control-button {
     background-color: transparent;
+  }
 
-    & path,
-    & polygon {
-      fill: $color-white;
-    }
+  .video__svg {
+    fill: $color-white;
   }
 
   .video__control-button--fullscreen {

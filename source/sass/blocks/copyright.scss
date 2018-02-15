@@ -10,21 +10,19 @@
   font-size: 0;
 
   vertical-align: middle;
+
+  &:hover .copyright__htmlacademy {
+    fill: $color-lightblue;
+  }
+
+  &:active .copyright__htmlacademy {
+    fill: $color-black-30;
+  }
 }
 
 .copyright__htmlacademy {
   width: 27px;
   height: 34px;
 
-  & path {
-    fill: $color-black;
-  }
-
-  &:hover path {
-    fill: $color-lightblue;
-  }
-
-  &:active path {
-    fill: $color-black-30;
-  }
+  fill: $color-black;
 }
