@@ -74,6 +74,7 @@ gulp.task("html", function () {
 
 gulp.task("jsmin", function () {
   gulp.src("source/js/*.js")
+  .pipe(gulp.dest("build/js"))
   .pipe(jsmin())
   .pipe(rename({suffix: '.min'}))
   .pipe(gulp.dest("build/js"));
