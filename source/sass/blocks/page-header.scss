@@ -18,6 +18,7 @@
   background-color: $color-white;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center bottom;
 
   &::after {
     position: absolute;
@@ -37,10 +38,6 @@
     background-size: cover;
 
     content: "";
-  }
-
-  &--index {
-    background-position: 50% 0;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
