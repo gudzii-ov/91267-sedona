@@ -371,7 +371,11 @@
     &--souvenir {
       order: 2;
 
-      padding: 61px 70px 83px 70px;
+      padding: 61px 90px 83px 90px;
     }
+  }
+
+  .reasons__extend-text--souvenir br {
+    display: inline;
   }
 }
